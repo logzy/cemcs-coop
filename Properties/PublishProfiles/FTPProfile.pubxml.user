@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAg9htcyMa0UWBApITUkn6+wAAAAACAAAAAAAQZgAAAAEAACAAAACJNBPT0R8D8NdxLvqoWOcaGX8IBrjT/J34mbk0bCUP1QAAAAAOgAAAAAIAACAAAAA7ZNWb/JmadFpK/9cHj6J0pvMyTd0/3MkuIwx2h4LqsCAAAAA1iWyWn9WDT2OUISmbm/2Rs1CJVb0hF8YQsa1zoasbpkAAAAD2fmA6dgdLm6457vd1t1vI8xObAAUz7x0WqYlZXLe5ibrV03xP3GAZw8hEoaMr/HscUWvljBEJllxzoi4R7qnH</EncryptedPassword>
+    <_PublishTargetUrl>ftp://ftp.site4now.net/businessbloc/cemcs</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>01/26/2021 19:47:56</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>05/07/2021 10:17:51</publishTime>
+    </File>
+    <File Include="appsettings.production.json">
+      <publishTime>05/15/2021 07:44:43</publishTime>
+    </File>
+    <File Include="AutoMapper.dll">
+      <publishTime>10/16/2020 15:36:54</publishTime>
+    </File>
+    <File Include="AutoMapper.Extensions.Microsoft.DependencyInjection.dll">
+      <publishTime>10/14/2020 19:50:14</publishTime>
+    </File>
+    <File Include="chev-test/dist/css/app.32d710f9.css">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/css/chunk-vendors.538c1c70.css">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/favicon.ico">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/AvenirLTStd-Black.d74d87dd.woff">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/AvenirLTStd-BlackOblique.e2816a68.woff">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/AvenirLTStd-Book.46a0b746.woff">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/AvenirLTStd-BookOblique.6b4ab469.woff">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/AvenirLTStd-Heavy.b997fee5.woff">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/AvenirLTStd-HeavyOblique.1ef56361.woff">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/AvenirLTStd-Light.4a3e0c40.woff">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/AvenirLTStd-LightOblique.13a78144.woff">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/AvenirLTStd-Medium.5ae9e0cb.woff">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/AvenirLTStd-MediumOblique.02996b5c.woff">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/AvenirLTStd-Oblique.31a2c7c9.woff">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/AvenirLTStd-Roman.43666b5e.woff">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/AvenirNext-Bold.e28d411a.ttf">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/AvenirNext-DemiBold.82fdfba2.ttf">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/AvenirNext-Medium.4e27c42e.ttf">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/AvenirNext-Regular.863fa44f.ttf">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/ionicons.05acfdb5.woff">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/ionicons.24712f6c.ttf">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/ionicons.2c2ae068.eot">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/Montserrat-Bold.a8de8ffe.ttf">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/Montserrat-Medium.5f797490.ttf">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/Montserrat-Regular.f7213526.ttf">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/fonts/Montserrat-SemiBold.31e34a4d.ttf">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/ademola.175766ea.jpg">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/banking.1985e065.svg">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/bg-blue.529fdef0.jpg">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/blog-image.bb877488.jpg">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/chevron-cemcs-logo.99723e45.png">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/chevron-cemcs-slide1.f4e81c53.jpeg">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/chevron-cemcs-slide2.d7bef1bd.jpeg">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/chevron-cemcs-slide3.37d025dc.jpeg">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/chevron-cemcs-slide4.db46e3a3.jpeg">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/chevron-cemcs.98757870.svg">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/deals.8e3925d5.svg">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/ecommerce.a05209bc.svg">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/insurance.f3beca33.svg">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/ionicons.c037dbbc.svg">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/loader.fe1d618b.gif">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/loans.8965ec5a.svg">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/lock.b1aef4ec.svg">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/login-bg-2.fdb92181.jpg">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/login-bg.89dbd3a3.svg">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/login-slider.4f6ed809.jpg">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/login-slider2.e91df28b.jpg">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/map-bg.eba81e6f.svg">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/photo-1497551060073-4c5ab6435f12.f51e77d8.jpg">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/img/travels.5b96954e.svg">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/index.html">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/js/app.3cc94f18.js">
+      <publishTime>05/14/2021 10:52:51</publishTime>
+    </File>
+    <File Include="chev-test/dist/js/app.3cc94f18.js.map">
+      <publishTime>05/14/2021 10:52:51</publishTime>
+    </File>
+    <File Include="chev-test/dist/js/app.b57c739f.js">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/js/app.b57c739f.js.map">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/js/chunk-vendors.4086c1a3.js">
+      <publishTime>05/14/2021 10:52:51</publishTime>
+    </File>
+    <File Include="chev-test/dist/js/chunk-vendors.4086c1a3.js.map">
+      <publishTime>05/14/2021 10:52:51</publishTime>
+    </File>
+    <File Include="chev-test/dist/js/chunk-vendors.cdcb51f0.js">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/dist/js/chunk-vendors.cdcb51f0.js.map">
+      <publishTime>05/15/2021 07:44:41</publishTime>
+    </File>
+    <File Include="chev-test/package-lock.json">
+      <publishTime>05/15/2021 07:43:59</publishTime>
+    </File>
+    <File Include="chev-test/package.json">
+      <publishTime>05/15/2021 07:43:59</publishTime>
+    </File>
+    <File Include="COOP.Banking.deps.json">
+      <publishTime>05/15/2021 07:44:43</publishTime>
+    </File>
+    <File Include="COOP.Banking.dll">
+      <publishTime>05/15/2021 07:43:32</publishTime>
+    </File>
+    <File Include="COOP.Banking.exe">
+      <publishTime>05/15/2021 07:43:32</publishTime>
+    </File>
+    <File Include="COOP.Banking.pdb">
+      <publishTime>05/15/2021 07:43:32</publishTime>
+    </File>
+    <File Include="COOP.Banking.runtimeconfig.json">
+      <publishTime>05/15/2021 07:43:33</publishTime>
+    </File>
+    <File Include="IdentityModel.dll">
+      <publishTime>02/03/2021 09:15:42</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Authentication.JwtBearer.dll">
+      <publishTime>11/20/2020 06:25:42</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Cryptography.Internal.dll">
+      <publishTime>01/23/2021 12:34:28</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Cryptography.KeyDerivation.dll">
+      <publishTime>01/23/2021 12:34:28</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll">
+      <publishTime>12/14/2020 05:05:20</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Identity.UI.dll">
+      <publishTime>01/20/2021 20:39:40</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Identity.UI.Views.V3.dll">
+      <publishTime>01/20/2021 20:40:50</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Identity.UI.Views.V4.dll">
+      <publishTime>01/20/2021 20:42:38</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.NodeServices.dll">
+      <publishTime>03/16/2021 18:08:50</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.SpaServices.dll">
+      <publishTime>03/16/2021 18:16:34</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.SpaServices.Extensions.dll">
+      <publishTime>03/16/2021 18:19:12</publishTime>
+    </File>
+    <File Include="Microsoft.Data.SqlClient.dll">
+      <publishTime>08/25/2020 23:24:48</publishTime>
+    </File>
+    <File Include="Microsoft.DotNet.PlatformAbstractions.dll">
+      <publishTime>11/22/2017 10:48:10</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Abstractions.dll">
+      <publishTime>12/12/2020 07:17:58</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.dll">
+      <publishTime>12/12/2020 07:18:16</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.InMemory.dll">
+      <publishTime>12/12/2020 07:18:22</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Relational.dll">
+      <publishTime>12/12/2020 07:18:22</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.SqlServer.dll">
+      <publishTime>12/12/2020 07:18:52</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Caching.Abstractions.dll">
+      <publishTime>10/19/2020 18:48:26</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Caching.Memory.dll">
+      <publishTime>10/19/2020 18:48:36</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.Abstractions.dll">
+      <publishTime>10/19/2020 18:48:28</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.Binder.dll">
+      <publishTime>03/16/2021 02:18:12</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.dll">
+      <publishTime>03/16/2021 02:17:44</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+      <publishTime>10/19/2020 18:48:00</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.dll">
+      <publishTime>11/26/2020 01:59:08</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyModel.dll">
+      <publishTime>11/22/2017 10:48:14</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.FileProviders.Abstractions.dll">
+      <publishTime>03/16/2021 02:18:14</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.FileProviders.Embedded.dll">
+      <publishTime>01/20/2021 05:06:52</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.FileProviders.Physical.dll">
+      <publishTime>03/16/2021 02:18:06</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.FileSystemGlobbing.dll">
+      <publishTime>03/16/2021 02:18:54</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Hosting.Abstractions.dll">
+      <publishTime>08/20/2020 23:52:08</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Identity.Core.dll">
+      <publishTime>01/23/2021 12:34:30</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Identity.Stores.dll">
+      <publishTime>01/23/2021 12:34:30</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.Abstractions.dll">
+      <publishTime>10/19/2020 18:48:04</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.Configuration.dll">
+      <publishTime>03/16/2021 02:23:46</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.Console.dll">
+      <publishTime>03/16/2021 02:23:52</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.dll">
+      <publishTime>10/19/2020 18:53:18</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Options.ConfigurationExtensions.dll">
+      <publishTime>03/16/2021 02:20:26</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Options.dll">
+      <publishTime>10/19/2020 18:48:30</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Primitives.dll">
+      <publishTime>10/19/2020 18:48:36</publishTime>
+    </File>
+    <File Include="Microsoft.Identity.Client.dll">
+      <publishTime>05/18/2020 20:11:54</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.JsonWebTokens.dll">
+      <publishTime>10/18/2019 23:39:24</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Logging.dll">
+      <publishTime>10/18/2019 23:40:20</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Protocols.dll">
+      <publishTime>10/18/2019 23:41:02</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Protocols.OpenIdConnect.dll">
+      <publishTime>10/18/2019 23:48:48</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Tokens.dll">
+      <publishTime>10/18/2019 23:43:40</publishTime>
+    </File>
+    <File Include="Newtonsoft.Json.dll">
+      <publishTime>04/22/2019 01:06:16</publishTime>
+    </File>
+    <File Include="publish/appsettings.Development.json">
+      <publishTime>01/26/2021 19:47:56</publishTime>
+    </File>
+    <File Include="publish/appsettings.json">
+      <publishTime>05/07/2021 10:17:51</publishTime>
+    </File>
+    <File Include="publish/chev-test/package-lock.json">
+      <publishTime>05/10/2021 15:21:04</publishTime>
+    </File>
+    <File Include="publish/chev-test/package.json">
+      <publishTime>05/10/2021 15:21:03</publishTime>
+    </File>
+    <File Include="publish/COOP.Banking.deps.json">
+      <publishTime>05/10/2021 15:20:58</publishTime>
+    </File>
+    <File Include="publish/COOP.Banking.runtimeconfig.json">
+      <publishTime>05/10/2021 15:20:50</publishTime>
+    </File>
+    <File Include="publish/web.config">
+      <publishTime>05/10/2021 15:22:22</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll">
+      <publishTime>08/25/2020 23:25:12</publishTime>
+    </File>
+    <File Include="runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>08/25/2020 20:34:56</publishTime>
+    </File>
+    <File Include="runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.pdb">
+      <publishTime>08/25/2020 20:31:56</publishTime>
+    </File>
+    <File Include="runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>08/25/2020 20:35:06</publishTime>
+    </File>
+    <File Include="runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.pdb">
+      <publishTime>08/25/2020 20:31:56</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>08/25/2020 20:34:56</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.pdb">
+      <publishTime>08/25/2020 20:31:56</publishTime>
+    </File>
+    <File Include="runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>08/25/2020 20:34:56</publishTime>
+    </File>
+    <File Include="runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.pdb">
+      <publishTime>08/25/2020 20:31:56</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll">
+      <publishTime>08/25/2020 23:24:48</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll">
+      <publishTime>11/15/2019 08:53:44</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>11/15/2019 08:53:46</publishTime>
+    </File>
+    <File Include="Serilog.AspNetCore.dll">
+      <publishTime>03/29/2021 03:18:02</publishTime>
+    </File>
+    <File Include="Serilog.dll">
+      <publishTime>09/10/2020 02:20:18</publishTime>
+    </File>
+    <File Include="Serilog.Extensions.Hosting.dll">
+      <publishTime>03/03/2021 06:26:52</publishTime>
+    </File>
+    <File Include="Serilog.Extensions.Logging.dll">
+      <publishTime>08/21/2019 23:09:16</publishTime>
+    </File>
+    <File Include="Serilog.Formatting.Compact.dll">
+      <publishTime>10/17/2019 05:18:46</publishTime>
+    </File>
+    <File Include="Serilog.Settings.Configuration.dll">
+      <publishTime>06/02/2019 00:57:40</publishTime>
+    </File>
+    <File Include="Serilog.Sinks.Console.dll">
+      <publishTime>10/22/2017 16:48:40</publishTime>
+    </File>
+    <File Include="Serilog.Sinks.Debug.dll">
+      <publishTime>02/14/2021 07:47:26</publishTime>
+    </File>
+    <File Include="Serilog.Sinks.File.dll">
+      <publishTime>10/17/2019 05:25:34</publishTime>
+    </File>
+    <File Include="System.Collections.Immutable.dll">
+      <publishTime>10/19/2020 18:37:40</publishTime>
+    </File>
+    <File Include="System.ComponentModel.Annotations.dll">
+      <publishTime>10/19/2020 18:37:54</publishTime>
+    </File>
+    <File Include="System.Configuration.ConfigurationManager.dll">
+      <publishTime>11/15/2019 08:37:04</publishTime>
+    </File>
+    <File Include="System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>12/12/2020 02:40:42</publishTime>
+    </File>
+    <File Include="System.IdentityModel.Tokens.Jwt.dll">
+      <publishTime>10/18/2019 23:38:18</publishTime>
+    </File>
+    <File Include="System.Runtime.Caching.dll">
+      <publishTime>11/15/2019 08:37:36</publishTime>
+    </File>
+    <File Include="System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>11/15/2019 08:37:42</publishTime>
+    </File>
+    <File Include="System.Text.Encodings.Web.dll">
+      <publishTime>10/19/2020 18:46:56</publishTime>
+    </File>
+    <File Include="System.Text.Json.dll">
+      <publishTime>10/19/2020 18:47:22</publishTime>
+    </File>
+    <File Include="VueCliMiddleware.dll">
+      <publishTime>10/15/2020 20:44:42</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>05/15/2021 07:44:43</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/css/site.css">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/favicon.ico">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/js/site.js">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-grid.css">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-grid.css.map">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-grid.min.css">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-grid.min.css.map">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-reboot.css">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-reboot.css.map">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-reboot.min.css">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap.css">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap.css.map">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap.min.css">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap.min.css.map">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/bootstrap/dist/js/bootstrap.bundle.js">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/bootstrap/dist/js/bootstrap.bundle.js.map">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/bootstrap/dist/js/bootstrap.bundle.min.js">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/bootstrap/dist/js/bootstrap.js">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/bootstrap/dist/js/bootstrap.js.map">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/bootstrap/dist/js/bootstrap.min.js">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/bootstrap/dist/js/bootstrap.min.js.map">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/bootstrap/LICENSE/LICENSE">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/jquery-validation-unobtrusive/LICENSE.txt">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/jquery-validation/dist/additional-methods.js">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/jquery-validation/dist/additional-methods.min.js">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/jquery-validation/dist/jquery.validate.js">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/jquery-validation/dist/jquery.validate.min.js">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/jquery-validation/LICENSE.md">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/jquery/dist/jquery.js">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/jquery/dist/jquery.min.js">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/jquery/dist/jquery.min.map">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/Identity/lib/jquery/LICENSE.txt">
+      <publishTime>01/20/2021 20:15:42</publishTime>
+    </File>
+  </ItemGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="CoopBankingDatabase">
+      <Value>Data Source=SQL5104.site4now.net%3bInitial Catalog=db_a677bb_coopbankingdb%3bUser Id=db_a677bb_coopbankingdb_admin%3bPassword=Teamconcept%401</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="COOP.Banking.Data.CoopBankingDataContext">
+      <Value>Data Source=SQL5104.site4now.net%3bInitial Catalog=db_a677bb_coopbankingdb%3bUser Id=db_a677bb_coopbankingdb_admin%3bPassword=Teamconcept%401</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

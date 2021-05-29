@@ -1,0 +1,685 @@
+2021-05-02 13:20:28.278 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-02 13:20:29.313 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-02 13:20:29.417 +01:00 [INF] Hosting environment: Development
+2021-05-02 13:20:29.476 +01:00 [INF] Content root path: C:\Users\USER\Documents\GitHub\coop.banking\COOP.Banking
+2021-05-02 13:20:29.526 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/  
+2021-05-02 13:20:29.906 +01:00 [INF] Request finished in 396.9779ms 404 
+2021-05-02 13:21:23.682 +01:00 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44319/api/Users/login  
+2021-05-02 13:21:23.720 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:21:23.734 +01:00 [INF] Request finished in 52.9327ms 204 
+2021-05-02 13:21:23.746 +01:00 [INF] Request starting HTTP/2.0 POST https://localhost:44319/api/Users/login application/json;charset=UTF-8 43
+2021-05-02 13:21:23.777 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:21:23.783 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.UsersController.Login (COOP.Banking)'
+2021-05-02 13:21:23.886 +01:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(COOP.Banking.Data.Authentication.LoginModel) on controller COOP.Banking.Controllers.UsersController (COOP.Banking).
+2021-05-02 13:21:26.924 +01:00 [WRN] No type was specified for the decimal property 'TotalWaiverFee' on entity type 'WaiverApplication'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2021-05-02 13:21:26.928 +01:00 [WRN] No type was specified for the decimal property 'Fee' on entity type 'WaiverApplicationDetail'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2021-05-02 13:21:26.932 +01:00 [WRN] No type was specified for the decimal property 'Interest' on entity type 'WaiverApplicationDetail'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2021-05-02 13:21:26.936 +01:00 [WRN] No type was specified for the decimal property 'LoanAmount' on entity type 'WaiverApplicationDetail'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2021-05-02 13:21:26.942 +01:00 [WRN] No type was specified for the decimal property 'Amount' on entity type 'WithdrawalApplication'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2021-05-02 13:21:27.284 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:21:31.803 +01:00 [ERR] Failed executing DbCommand (747ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2021-05-02 13:21:32.349 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'COOP.Banking.Data.CoopBankingDataContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'LastLogin'.
+Invalid column name 'UserTypeCategory'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:fd0396d8-3e20-4a74-9716-dbc4cd0dd009
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'LastLogin'.
+Invalid column name 'UserTypeCategory'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:fd0396d8-3e20-4a74-9716-dbc4cd0dd009
+Error Number:207,State:1,Class:16
+2021-05-02 13:21:34.419 +01:00 [INF] Executed action COOP.Banking.Controllers.UsersController.Login (COOP.Banking) in 10512.1345ms
+2021-05-02 13:21:34.715 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.UsersController.Login (COOP.Banking)'
+2021-05-02 13:21:35.579 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'LastLogin'.
+Invalid column name 'UserTypeCategory'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at COOP.Banking.Controllers.UsersController.Login(LoginModel model) in C:\Users\USER\Documents\GitHub\coop.banking\COOP.Banking\Controllers\UsersController.cs:line 62
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:fd0396d8-3e20-4a74-9716-dbc4cd0dd009
+Error Number:207,State:1,Class:16
+2021-05-02 13:21:35.684 +01:00 [INF] Request finished in 11940.4631ms 500 text/plain
+2021-05-02 13:29:04.855 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-02 13:29:05.665 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-02 13:29:05.671 +01:00 [INF] Hosting environment: Development
+2021-05-02 13:29:05.675 +01:00 [INF] Content root path: C:\Users\USER\Documents\GitHub\coop.banking\COOP.Banking
+2021-05-02 13:29:05.733 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/  
+2021-05-02 13:29:05.965 +01:00 [INF] Request finished in 241.8242ms 404 
+2021-05-02 13:29:37.403 +01:00 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44319/api/Users/login  
+2021-05-02 13:29:37.436 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:29:37.453 +01:00 [INF] Request finished in 55.0218ms 204 
+2021-05-02 13:29:37.473 +01:00 [INF] Request starting HTTP/2.0 POST https://localhost:44319/api/Users/login application/json;charset=UTF-8 43
+2021-05-02 13:29:37.508 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:29:37.516 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.UsersController.Login (COOP.Banking)'
+2021-05-02 13:29:37.662 +01:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(COOP.Banking.Data.Authentication.LoginModel) on controller COOP.Banking.Controllers.UsersController (COOP.Banking).
+2021-05-02 13:29:41.346 +01:00 [WRN] No type was specified for the decimal property 'TotalWaiverFee' on entity type 'WaiverApplication'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2021-05-02 13:29:41.361 +01:00 [WRN] No type was specified for the decimal property 'Fee' on entity type 'WaiverApplicationDetail'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2021-05-02 13:29:41.366 +01:00 [WRN] No type was specified for the decimal property 'Interest' on entity type 'WaiverApplicationDetail'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2021-05-02 13:29:41.370 +01:00 [WRN] No type was specified for the decimal property 'LoanAmount' on entity type 'WaiverApplicationDetail'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2021-05-02 13:29:41.374 +01:00 [WRN] No type was specified for the decimal property 'Amount' on entity type 'WithdrawalApplication'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2021-05-02 13:29:41.838 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:29:43.847 +01:00 [INF] Executed DbCommand (169ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2021-05-02 13:29:44.399 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2021-05-02 13:29:44.735 +01:00 [INF] Executed DbCommand (23ms) [Parameters=[@p17='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime2), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256), @p15='?' (DbType = Int32), @p16='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LastLogin] = @p4, [LockoutEnabled] = @p5, [LockoutEnd] = @p6, [NormalizedEmail] = @p7, [NormalizedUserName] = @p8, [PasswordHash] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [SecurityStamp] = @p12, [TwoFactorEnabled] = @p13, [UserName] = @p14, [UserType] = @p15, [UserTypeCategory] = @p16
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+SELECT @@ROWCOUNT;
+2021-05-02 13:29:50.483 +01:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`6[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[COOP.Banking.Data.Enums+UserType, COOP.Banking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-02 13:29:50.641 +01:00 [INF] Executed action COOP.Banking.Controllers.UsersController.Login (COOP.Banking) in 12966.5191ms
+2021-05-02 13:29:50.646 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.UsersController.Login (COOP.Banking)'
+2021-05-02 13:29:50.663 +01:00 [INF] Request finished in 13197.735ms 200 application/json; charset=utf-8
+2021-05-02 13:29:52.739 +01:00 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44319/api/Members/Usertype  
+2021-05-02 13:29:52.822 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:29:52.833 +01:00 [INF] Request finished in 95.1631ms 204 
+2021-05-02 13:29:52.849 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Members/Usertype  
+2021-05-02 13:29:52.857 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:29:53.036 +01:00 [INF] Successfully validated the token.
+2021-05-02 13:29:53.061 +01:00 [INF] Authorization was successful.
+2021-05-02 13:29:53.069 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.MembersController.GetAsyncUserId (COOP.Banking)'
+2021-05-02 13:29:53.085 +01:00 [INF] Route matched with {action = "GetAsyncUserId", controller = "Members"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAsyncUserId() on controller COOP.Banking.Controllers.MembersController (COOP.Banking).
+2021-05-02 13:29:54.017 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:29:54.065 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-05-02 13:29:54.228 +01:00 [INF] Executed DbCommand (18ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Active], [m].[ApprovalCount], [m].[Approved], [m].[Deleted], [m].[EmployeeNumber], [m].[EmploymentDate], [m].[HasPaidFee], [m].[Location], [m].[MemberType], [m].[PersonId], [m].[RegistrationDate], [m].[RetirementDate], [m].[Tag], [m].[UserId], [p].[Id], [p].[Address1], [p].[Address2], [p].[Country], [p].[CreatedBy], [p].[DateCreated], [p].[DateOfBirth], [p].[Email], [p].[FirstName], [p].[LastModifiedBy], [p].[LastModifiedDate], [p].[LastName], [p].[MaritalStatus], [p].[MiddleName], [p].[MobileNumber], [p].[PersonalEmail], [p].[Sex], [p].[StateId], [p].[Title], [p].[WorkPhone]
+FROM [Members] AS [m]
+INNER JOIN [Persons] AS [p] ON [m].[PersonId] = [p].[Id]
+WHERE [m].[UserId] = @__userId_0
+2021-05-02 13:29:54.586 +01:00 [INF] Executing ObjectResult, writing value of type 'COOP.Banking.Data.ServiceResponse`1[[COOP.Banking.Data.DTO.MemberDTO, COOP.Banking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-02 13:29:54.687 +01:00 [INF] Executed action COOP.Banking.Controllers.MembersController.GetAsyncUserId (COOP.Banking) in 1597.9646ms
+2021-05-02 13:29:54.695 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.MembersController.GetAsyncUserId (COOP.Banking)'
+2021-05-02 13:29:54.700 +01:00 [INF] Request finished in 1851.0203ms 200 application/json; charset=utf-8
+2021-05-02 13:30:02.192 +01:00 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44319/api/MemberBalances/balance  
+2021-05-02 13:30:02.196 +01:00 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44319/api/Members/Usertype  
+2021-05-02 13:30:02.307 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:02.413 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:02.299 +01:00 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44319/api/Members/Usertype  
+2021-05-02 13:30:02.448 +01:00 [INF] Request finished in 246.8727ms 204 
+2021-05-02 13:30:02.453 +01:00 [INF] Request finished in 257.2347ms 204 
+2021-05-02 13:30:02.453 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:02.443 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/MemberBalances/balance  
+2021-05-02 13:30:02.483 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Members/Usertype  
+2021-05-02 13:30:02.506 +01:00 [INF] Request finished in 207.0789ms 204 
+2021-05-02 13:30:02.526 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:02.519 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:02.539 +01:00 [INF] Successfully validated the token.
+2021-05-02 13:30:02.547 +01:00 [INF] Successfully validated the token.
+2021-05-02 13:30:02.549 +01:00 [INF] Authorization was successful.
+2021-05-02 13:30:02.604 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.MemberBalancesController.GetBalanceAsync (COOP.Banking)'
+2021-05-02 13:30:02.611 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.MembersController.GetAsyncUserId (COOP.Banking)'
+2021-05-02 13:30:02.617 +01:00 [INF] Route matched with {action = "GetAsyncUserId", controller = "Members"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAsyncUserId() on controller COOP.Banking.Controllers.MembersController (COOP.Banking).
+2021-05-02 13:30:02.630 +01:00 [INF] Route matched with {action = "GetBalance", controller = "MemberBalances"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetBalanceAsync() on controller COOP.Banking.Controllers.MemberBalancesController (COOP.Banking).
+2021-05-02 13:30:02.663 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:30:02.663 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:30:02.697 +01:00 [INF] Executed DbCommand (15ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-05-02 13:30:02.730 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Active], [m].[ApprovalCount], [m].[Approved], [m].[Deleted], [m].[EmployeeNumber], [m].[EmploymentDate], [m].[HasPaidFee], [m].[Location], [m].[MemberType], [m].[PersonId], [m].[RegistrationDate], [m].[RetirementDate], [m].[Tag], [m].[UserId], [p].[Id], [p].[Address1], [p].[Address2], [p].[Country], [p].[CreatedBy], [p].[DateCreated], [p].[DateOfBirth], [p].[Email], [p].[FirstName], [p].[LastModifiedBy], [p].[LastModifiedDate], [p].[LastName], [p].[MaritalStatus], [p].[MiddleName], [p].[MobileNumber], [p].[PersonalEmail], [p].[Sex], [p].[StateId], [p].[Title], [p].[WorkPhone]
+FROM [Members] AS [m]
+INNER JOIN [Persons] AS [p] ON [m].[PersonId] = [p].[Id]
+WHERE [m].[UserId] = @__userId_0
+2021-05-02 13:30:02.734 +01:00 [INF] Executed DbCommand (17ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-05-02 13:30:02.747 +01:00 [INF] Executing ObjectResult, writing value of type 'COOP.Banking.Data.ServiceResponse`1[[COOP.Banking.Data.DTO.MemberDTO, COOP.Banking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-02 13:30:02.749 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Active], [m].[ApprovalCount], [m].[Approved], [m].[Deleted], [m].[EmployeeNumber], [m].[EmploymentDate], [m].[HasPaidFee], [m].[Location], [m].[MemberType], [m].[PersonId], [m].[RegistrationDate], [m].[RetirementDate], [m].[Tag], [m].[UserId], [p].[Id], [p].[Address1], [p].[Address2], [p].[Country], [p].[CreatedBy], [p].[DateCreated], [p].[DateOfBirth], [p].[Email], [p].[FirstName], [p].[LastModifiedBy], [p].[LastModifiedDate], [p].[LastName], [p].[MaritalStatus], [p].[MiddleName], [p].[MobileNumber], [p].[PersonalEmail], [p].[Sex], [p].[StateId], [p].[Title], [p].[WorkPhone]
+FROM [Members] AS [m]
+INNER JOIN [Persons] AS [p] ON [m].[PersonId] = [p].[Id]
+WHERE [m].[UserId] = @__userId_0
+2021-05-02 13:30:02.759 +01:00 [INF] Executed action COOP.Banking.Controllers.MembersController.GetAsyncUserId (COOP.Banking) in 137.8459ms
+2021-05-02 13:30:02.764 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.MembersController.GetAsyncUserId (COOP.Banking)'
+2021-05-02 13:30:02.768 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Members/Usertype  
+2021-05-02 13:30:02.775 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:02.778 +01:00 [INF] Request finished in 300.6429ms 200 application/json; charset=utf-8
+2021-05-02 13:30:02.784 +01:00 [INF] Successfully validated the token.
+2021-05-02 13:30:02.788 +01:00 [INF] Authorization was successful.
+2021-05-02 13:30:02.793 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.MembersController.GetAsyncUserId (COOP.Banking)'
+2021-05-02 13:30:02.801 +01:00 [INF] Route matched with {action = "GetAsyncUserId", controller = "Members"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAsyncUserId() on controller COOP.Banking.Controllers.MembersController (COOP.Banking).
+2021-05-02 13:30:02.825 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:30:02.837 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-05-02 13:30:02.851 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Active], [m].[ApprovalCount], [m].[Approved], [m].[Deleted], [m].[EmployeeNumber], [m].[EmploymentDate], [m].[HasPaidFee], [m].[Location], [m].[MemberType], [m].[PersonId], [m].[RegistrationDate], [m].[RetirementDate], [m].[Tag], [m].[UserId], [p].[Id], [p].[Address1], [p].[Address2], [p].[Country], [p].[CreatedBy], [p].[DateCreated], [p].[DateOfBirth], [p].[Email], [p].[FirstName], [p].[LastModifiedBy], [p].[LastModifiedDate], [p].[LastName], [p].[MaritalStatus], [p].[MiddleName], [p].[MobileNumber], [p].[PersonalEmail], [p].[Sex], [p].[StateId], [p].[Title], [p].[WorkPhone]
+FROM [Members] AS [m]
+INNER JOIN [Persons] AS [p] ON [m].[PersonId] = [p].[Id]
+WHERE [m].[UserId] = @__userId_0
+2021-05-02 13:30:02.858 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[@__MemberId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[BalanceType], [m].[CurrentBalance], [m].[ItemId], [m].[MemberId]
+FROM [MemberBalances] AS [m]
+WHERE [m].[MemberId] = @__MemberId_0
+2021-05-02 13:30:02.890 +01:00 [INF] Executing ObjectResult, writing value of type 'COOP.Banking.Data.ServiceResponse`1[[COOP.Banking.Data.DTO.MemberDTO, COOP.Banking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-02 13:30:02.896 +01:00 [INF] Executed action COOP.Banking.Controllers.MembersController.GetAsyncUserId (COOP.Banking) in 92.2886ms
+2021-05-02 13:30:02.914 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.MembersController.GetAsyncUserId (COOP.Banking)'
+2021-05-02 13:30:02.918 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@__MemberId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[MemberId], [m].[SavingsAmount], [m].[Type]
+FROM [MemberSavings] AS [m]
+WHERE [m].[MemberId] = @__MemberId_0
+2021-05-02 13:30:02.920 +01:00 [INF] Request finished in 150.0091ms 200 application/json; charset=utf-8
+2021-05-02 13:30:02.986 +01:00 [INF] Executing ObjectResult, writing value of type 'COOP.Banking.Data.ServiceResponse`1[[COOP.Banking.Data.DTO.BalancesDTO, COOP.Banking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-02 13:30:03.000 +01:00 [INF] Executed action COOP.Banking.Controllers.MemberBalancesController.GetBalanceAsync (COOP.Banking) in 367.0624ms
+2021-05-02 13:30:03.009 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.MemberBalancesController.GetBalanceAsync (COOP.Banking)'
+2021-05-02 13:30:03.016 +01:00 [INF] Request finished in 577.2917ms 200 application/json; charset=utf-8
+2021-05-02 13:30:18.366 +01:00 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44319/api/Members/Usertype  
+2021-05-02 13:30:18.405 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:18.439 +01:00 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44319/api/Members/Usertype  
+2021-05-02 13:30:18.436 +01:00 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44319/api/LoanCongfig/Member/Type  
+2021-05-02 13:30:18.459 +01:00 [INF] Request finished in 93.1862ms 204 
+2021-05-02 13:30:18.459 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:18.476 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:18.429 +01:00 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44319/api/MemberBalances/balance  
+2021-05-02 13:30:18.483 +01:00 [INF] Request finished in 45.7624ms 204 
+2021-05-02 13:30:18.483 +01:00 [INF] Request finished in 46.6344ms 204 
+2021-05-02 13:30:18.492 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:18.473 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Members/Usertype  
+2021-05-02 13:30:18.503 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/LoanCongfig/Member/Type  
+2021-05-02 13:30:18.504 +01:00 [INF] Request finished in 74.9969ms 204 
+2021-05-02 13:30:18.511 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:18.444 +01:00 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44319/api/Loans/employeenumber  
+2021-05-02 13:30:18.519 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/MemberBalances/balance  
+2021-05-02 13:30:18.524 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:18.528 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:18.524 +01:00 [INF] Successfully validated the token.
+2021-05-02 13:30:18.540 +01:00 [INF] Successfully validated the token.
+2021-05-02 13:30:18.540 +01:00 [INF] Successfully validated the token.
+2021-05-02 13:30:18.548 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.LoanConfigController.GetLoansByMemTypeAsync (COOP.Banking)'
+2021-05-02 13:30:18.547 +01:00 [INF] Authorization was successful.
+2021-05-02 13:30:18.556 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.MemberBalancesController.GetBalanceAsync (COOP.Banking)'
+2021-05-02 13:30:18.559 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.MembersController.GetAsyncUserId (COOP.Banking)'
+2021-05-02 13:30:18.563 +01:00 [INF] Route matched with {action = "GetBalance", controller = "MemberBalances"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetBalanceAsync() on controller COOP.Banking.Controllers.MemberBalancesController (COOP.Banking).
+2021-05-02 13:30:18.567 +01:00 [INF] Route matched with {action = "GetAsyncUserId", controller = "Members"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAsyncUserId() on controller COOP.Banking.Controllers.MembersController (COOP.Banking).
+2021-05-02 13:30:18.575 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:30:18.583 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:30:18.528 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:18.444 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Payments/modes/All  
+2021-05-02 13:30:18.606 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:18.622 +01:00 [INF] Executed DbCommand (15ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-05-02 13:30:18.636 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Loans/employeenumber  
+2021-05-02 13:30:18.643 +01:00 [INF] Route matched with {action = "GetLoansByMemType", controller = "LoanConfig"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetLoansByMemTypeAsync() on controller COOP.Banking.Controllers.LoanConfigController (COOP.Banking).
+2021-05-02 13:30:18.626 +01:00 [INF] Executed DbCommand (14ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-05-02 13:30:18.672 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:18.606 +01:00 [INF] Request finished in 162.0103ms 204 
+2021-05-02 13:30:18.635 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.PaymentsController.GetModesAsync (COOP.Banking)'
+2021-05-02 13:30:18.689 +01:00 [INF] Successfully validated the token.
+2021-05-02 13:30:18.696 +01:00 [INF] Authorization was successful.
+2021-05-02 13:30:18.702 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.LoanController.GetLoanByMemberEmployeeNumber (COOP.Banking)'
+2021-05-02 13:30:18.710 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:30:18.726 +01:00 [INF] Route matched with {action = "GetModes", controller = "Payments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetModesAsync() on controller COOP.Banking.Controllers.PaymentsController (COOP.Banking).
+2021-05-02 13:30:18.744 +01:00 [INF] Executed DbCommand (92ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Active], [m].[ApprovalCount], [m].[Approved], [m].[Deleted], [m].[EmployeeNumber], [m].[EmploymentDate], [m].[HasPaidFee], [m].[Location], [m].[MemberType], [m].[PersonId], [m].[RegistrationDate], [m].[RetirementDate], [m].[Tag], [m].[UserId], [p].[Id], [p].[Address1], [p].[Address2], [p].[Country], [p].[CreatedBy], [p].[DateCreated], [p].[DateOfBirth], [p].[Email], [p].[FirstName], [p].[LastModifiedBy], [p].[LastModifiedDate], [p].[LastName], [p].[MaritalStatus], [p].[MiddleName], [p].[MobileNumber], [p].[PersonalEmail], [p].[Sex], [p].[StateId], [p].[Title], [p].[WorkPhone]
+FROM [Members] AS [m]
+INNER JOIN [Persons] AS [p] ON [m].[PersonId] = [p].[Id]
+WHERE [m].[UserId] = @__userId_0
+2021-05-02 13:30:18.750 +01:00 [INF] Route matched with {action = "GetLoanByMemberEmployeeNumber", controller = "Loan"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLoanByMemberEmployeeNumber() on controller COOP.Banking.Controllers.LoanController (COOP.Banking).
+2021-05-02 13:30:18.765 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:30:18.773 +01:00 [INF] Executed DbCommand (55ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Active], [m].[ApprovalCount], [m].[Approved], [m].[Deleted], [m].[EmployeeNumber], [m].[EmploymentDate], [m].[HasPaidFee], [m].[Location], [m].[MemberType], [m].[PersonId], [m].[RegistrationDate], [m].[RetirementDate], [m].[Tag], [m].[UserId], [p].[Id], [p].[Address1], [p].[Address2], [p].[Country], [p].[CreatedBy], [p].[DateCreated], [p].[DateOfBirth], [p].[Email], [p].[FirstName], [p].[LastModifiedBy], [p].[LastModifiedDate], [p].[LastName], [p].[MaritalStatus], [p].[MiddleName], [p].[MobileNumber], [p].[PersonalEmail], [p].[Sex], [p].[StateId], [p].[Title], [p].[WorkPhone]
+FROM [Members] AS [m]
+INNER JOIN [Persons] AS [p] ON [m].[PersonId] = [p].[Id]
+WHERE [m].[UserId] = @__userId_0
+2021-05-02 13:30:18.774 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:30:18.792 +01:00 [INF] Executing ObjectResult, writing value of type 'COOP.Banking.Data.ServiceResponse`1[[COOP.Banking.Data.DTO.MemberDTO, COOP.Banking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-02 13:30:18.805 +01:00 [INF] Executed DbCommand (42ms) [Parameters=[@__MemberId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[BalanceType], [m].[CurrentBalance], [m].[ItemId], [m].[MemberId]
+FROM [MemberBalances] AS [m]
+WHERE [m].[MemberId] = @__MemberId_0
+2021-05-02 13:30:18.811 +01:00 [INF] Executed action COOP.Banking.Controllers.MembersController.GetAsyncUserId (COOP.Banking) in 230.7357ms
+2021-05-02 13:30:18.816 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.MembersController.GetAsyncUserId (COOP.Banking)'
+2021-05-02 13:30:18.827 +01:00 [INF] Request finished in 354.3265ms 200 application/json; charset=utf-8
+2021-05-02 13:30:18.833 +01:00 [INF] Executed DbCommand (39ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-05-02 13:30:18.842 +01:00 [INF] Executed DbCommand (20ms) [Parameters=[@__MemberId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[MemberId], [m].[SavingsAmount], [m].[Type]
+FROM [MemberSavings] AS [m]
+WHERE [m].[MemberId] = @__MemberId_0
+2021-05-02 13:30:18.879 +01:00 [INF] Executed DbCommand (53ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-05-02 13:30:18.914 +01:00 [INF] Executing ObjectResult, writing value of type 'COOP.Banking.Data.ServiceResponse`1[[COOP.Banking.Data.DTO.BalancesDTO, COOP.Banking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-02 13:30:18.912 +01:00 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Active], [m].[Description]
+FROM [ModeOfPayments] AS [m]
+WHERE [m].[Active] = CAST(1 AS bit)
+2021-05-02 13:30:18.947 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Members/Usertype  
+2021-05-02 13:30:18.949 +01:00 [INF] Executed action COOP.Banking.Controllers.MemberBalancesController.GetBalanceAsync (COOP.Banking) in 372.3968ms
+2021-05-02 13:30:18.978 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:18.984 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.MemberBalancesController.GetBalanceAsync (COOP.Banking)'
+2021-05-02 13:30:18.989 +01:00 [INF] Successfully validated the token.
+2021-05-02 13:30:19.029 +01:00 [INF] Request finished in 511.8715ms 200 application/json; charset=utf-8
+2021-05-02 13:30:19.036 +01:00 [INF] Authorization was successful.
+2021-05-02 13:30:19.044 +01:00 [INF] Executed DbCommand (111ms) [Parameters=[@__EmployeeNumber_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[AccountName], [l].[AccountNumber], [l].[ApprovalCount], [l].[Approved], [l].[BankCode], [l].[BankName], [l].[DateSubmitted], [l].[EffectiveDate], [l].[GuarantorApprovalCount], [l].[Interest], [l].[IsPaid], [l].[LoanAmount], [l].[LoanCondition], [l].[LoanId], [l].[MemberId], [l].[MethodOfCollectionId], [l].[Principal], [l].[RepaymentPeriod], [l].[RequiredGuarantorsCount], [l].[Status], [l].[Tag], [l0].[Id], [l0].[Active], [l0].[Description], [l0].[LoanCode], [l0].[LoanType], [l0].[Name], [m].[Id], [m].[Active], [m].[ApprovalCount], [m].[Approved], [m].[Deleted], [m].[EmployeeNumber], [m].[EmploymentDate], [m].[HasPaidFee], [m].[Location], [m].[MemberType], [m].[PersonId], [m].[RegistrationDate], [m].[RetirementDate], [m].[Tag], [m].[UserId], [p].[Id], [p].[Address1], [p].[Address2], [p].[Country], [p].[CreatedBy], [p].[DateCreated], [p].[DateOfBirth], [p].[Email], [p].[FirstName], [p].[LastModifiedBy], [p].[LastModifiedDate], [p].[LastName], [p].[MaritalStatus], [p].[MiddleName], [p].[MobileNumber], [p].[PersonalEmail], [p].[Sex], [p].[StateId], [p].[Title], [p].[WorkPhone]
+FROM [LoanApplications] AS [l]
+INNER JOIN [Members] AS [m] ON [l].[MemberId] = [m].[Id]
+INNER JOIN [Loans] AS [l0] ON [l].[LoanId] = [l0].[Id]
+INNER JOIN [Persons] AS [p] ON [m].[PersonId] = [p].[Id]
+WHERE [m].[EmployeeNumber] = @__EmployeeNumber_0
+2021-05-02 13:30:19.062 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.MembersController.GetAsyncUserId (COOP.Banking)'
+2021-05-02 13:30:19.088 +01:00 [INF] Executing ObjectResult, writing value of type 'COOP.Banking.Data.ServiceResponse`1[[System.Collections.Generic.List`1[[COOP.Banking.Data.DTO.LoanApplicationDTO, COOP.Banking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-05-02 13:30:19.111 +01:00 [INF] Route matched with {action = "GetAsyncUserId", controller = "Members"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAsyncUserId() on controller COOP.Banking.Controllers.MembersController (COOP.Banking).
+2021-05-02 13:30:19.078 +01:00 [INF] Executing ObjectResult, writing value of type 'COOP.Banking.Data.ServiceResponse`1[[System.Collections.Generic.List`1[[COOP.Banking.Data.DTO.ModeOfPaymentDTO, COOP.Banking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-05-02 13:30:19.136 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:30:19.134 +01:00 [INF] Executed action COOP.Banking.Controllers.LoanController.GetLoanByMemberEmployeeNumber (COOP.Banking) in 377.3826ms
+2021-05-02 13:30:19.148 +01:00 [INF] Executed DbCommand (35ms) [Parameters=[@__memType_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AdminChargeAmount], [t].[AdminChargeType], [t].[AllowConcurent], [t].[AllowPartialOffset], [t].[AllowTenureAdjustment], [t].[AllowTopUp], [t].[ConcurrentLoanCount], [t].[ConcurrentQualifyingPeriods], [t].[ExistingLoanFeeAmount], [t].[GuarantorCount], [t].[GuarantorMaximumAmount], [t].[IntrestRate], [t].[IsATargetLoan], [t].[LoanId], [t].[LumpSumSavingsAmount], [t].[MaxLoanAmount], [t].[MaxMonthlyRepayPeriod], [t].[MemberTypeId], [t].[MinLoanAmount], [t].[MinMonthlyRepayPeriod], [t].[MonthlyRepayPeriod], [t].[MonthlySavingsAmount], [t].[PeriodBeforeOffset], [t].[RequiresGuarantors], [t].[ServiceYearDuration], [t].[UseYearsOfService], [t].[WaitingPeriod], [l0].[Id], [l0].[Active], [l0].[Description], [l0].[LoanCode], [l0].[LoanType], [l0].[Name], [m].[Id], [m].[Description]
+FROM (
+    SELECT DISTINCT [l].[Id], [l].[AdminChargeAmount], [l].[AdminChargeType], [l].[AllowConcurent], [l].[AllowPartialOffset], [l].[AllowTenureAdjustment], [l].[AllowTopUp], [l].[ConcurrentLoanCount], [l].[ConcurrentQualifyingPeriods], [l].[ExistingLoanFeeAmount], [l].[GuarantorCount], [l].[GuarantorMaximumAmount], [l].[IntrestRate], [l].[IsATargetLoan], [l].[LoanId], [l].[LumpSumSavingsAmount], [l].[MaxLoanAmount], [l].[MaxMonthlyRepayPeriod], [l].[MemberTypeId], [l].[MinLoanAmount], [l].[MinMonthlyRepayPeriod], [l].[MonthlyRepayPeriod], [l].[MonthlySavingsAmount], [l].[PeriodBeforeOffset], [l].[RequiresGuarantors], [l].[ServiceYearDuration], [l].[UseYearsOfService], [l].[WaitingPeriod]
+    FROM [LoanConfigs] AS [l]
+    WHERE [l].[MemberTypeId] = @__memType_0
+) AS [t]
+INNER JOIN [Loans] AS [l0] ON [t].[LoanId] = [l0].[Id]
+INNER JOIN [MemberTypes] AS [m] ON [t].[MemberTypeId] = [m].[Id]
+2021-05-02 13:30:19.166 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.LoanController.GetLoanByMemberEmployeeNumber (COOP.Banking)'
+2021-05-02 13:30:19.166 +01:00 [INF] Executed action COOP.Banking.Controllers.PaymentsController.GetModesAsync (COOP.Banking) in 427.2208ms
+2021-05-02 13:30:19.174 +01:00 [INF] Request finished in 537.752ms 200 application/json; charset=utf-8
+2021-05-02 13:30:19.178 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.PaymentsController.GetModesAsync (COOP.Banking)'
+2021-05-02 13:30:19.183 +01:00 [INF] Executed DbCommand (11ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-05-02 13:30:19.203 +01:00 [INF] Request finished in 759.3464ms 200 application/json; charset=utf-8
+2021-05-02 13:30:19.216 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Active], [m].[ApprovalCount], [m].[Approved], [m].[Deleted], [m].[EmployeeNumber], [m].[EmploymentDate], [m].[HasPaidFee], [m].[Location], [m].[MemberType], [m].[PersonId], [m].[RegistrationDate], [m].[RetirementDate], [m].[Tag], [m].[UserId], [p].[Id], [p].[Address1], [p].[Address2], [p].[Country], [p].[CreatedBy], [p].[DateCreated], [p].[DateOfBirth], [p].[Email], [p].[FirstName], [p].[LastModifiedBy], [p].[LastModifiedDate], [p].[LastName], [p].[MaritalStatus], [p].[MiddleName], [p].[MobileNumber], [p].[PersonalEmail], [p].[Sex], [p].[StateId], [p].[Title], [p].[WorkPhone]
+FROM [Members] AS [m]
+INNER JOIN [Persons] AS [p] ON [m].[PersonId] = [p].[Id]
+WHERE [m].[UserId] = @__userId_0
+2021-05-02 13:30:19.226 +01:00 [INF] Executing ObjectResult, writing value of type 'COOP.Banking.Data.ServiceResponse`1[[COOP.Banking.Data.DTO.MemberDTO, COOP.Banking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-02 13:30:19.232 +01:00 [INF] Executed action COOP.Banking.Controllers.MembersController.GetAsyncUserId (COOP.Banking) in 98.3187ms
+2021-05-02 13:30:19.272 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.MembersController.GetAsyncUserId (COOP.Banking)'
+2021-05-02 13:30:19.332 +01:00 [INF] Request finished in 385.2074ms 200 application/json; charset=utf-8
+2021-05-02 13:30:19.558 +01:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[COOP.Banking.Data.DTO.LoanConfigDTO, COOP.Banking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-02 13:30:19.654 +01:00 [INF] Executed action COOP.Banking.Controllers.LoanConfigController.GetLoansByMemTypeAsync (COOP.Banking) in 982.0775ms
+2021-05-02 13:30:19.660 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.LoanConfigController.GetLoansByMemTypeAsync (COOP.Banking)'
+2021-05-02 13:30:19.666 +01:00 [INF] Request finished in 1173.916ms 200 application/json; charset=utf-8
+2021-05-02 13:30:19.721 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/banks/All  
+2021-05-02 13:30:19.732 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:19.741 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.BanksController.GetAsync (COOP.Banking)'
+2021-05-02 13:30:19.756 +01:00 [INF] Route matched with {action = "Get", controller = "Banks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAsync() on controller COOP.Banking.Controllers.BanksController (COOP.Banking).
+2021-05-02 13:30:19.788 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:30:19.829 +01:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BankCode], [b].[BankName]
+FROM [Banks] AS [b]
+ORDER BY [b].[BankName]
+2021-05-02 13:30:19.899 +01:00 [INF] Executing ObjectResult, writing value of type 'COOP.Banking.Data.ServiceResponse`1[[System.Collections.Generic.List`1[[COOP.Banking.Data.DTO.BankDTO, COOP.Banking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-05-02 13:30:19.912 +01:00 [INF] Executed action COOP.Banking.Controllers.BanksController.GetAsync (COOP.Banking) in 131.3549ms
+2021-05-02 13:30:19.922 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.BanksController.GetAsync (COOP.Banking)'
+2021-05-02 13:30:19.926 +01:00 [INF] Request finished in 204.6131ms 200 application/json; charset=utf-8
+2021-05-02 13:30:19.960 +01:00 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44319/api/Loans/guarantor  
+2021-05-02 13:30:19.965 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:19.971 +01:00 [INF] Request finished in 10.9363ms 204 
+2021-05-02 13:30:19.977 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Loans/guarantor  
+2021-05-02 13:30:19.984 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:19.992 +01:00 [INF] Successfully validated the token.
+2021-05-02 13:30:19.997 +01:00 [INF] Authorization was successful.
+2021-05-02 13:30:20.000 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.LoanController.GetGuarantorsByMember (COOP.Banking)'
+2021-05-02 13:30:20.012 +01:00 [INF] Route matched with {action = "GetGuarantorsByMember", controller = "Loan"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetGuarantorsByMember() on controller COOP.Banking.Controllers.LoanController (COOP.Banking).
+2021-05-02 13:30:20.018 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:30:20.030 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-05-02 13:30:20.040 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Active], [m].[ApprovalCount], [m].[Approved], [m].[Deleted], [m].[EmployeeNumber], [m].[EmploymentDate], [m].[HasPaidFee], [m].[Location], [m].[MemberType], [m].[PersonId], [m].[RegistrationDate], [m].[RetirementDate], [m].[Tag], [m].[UserId], [p].[Id], [p].[Address1], [p].[Address2], [p].[Country], [p].[CreatedBy], [p].[DateCreated], [p].[DateOfBirth], [p].[Email], [p].[FirstName], [p].[LastModifiedBy], [p].[LastModifiedDate], [p].[LastName], [p].[MaritalStatus], [p].[MiddleName], [p].[MobileNumber], [p].[PersonalEmail], [p].[Sex], [p].[StateId], [p].[Title], [p].[WorkPhone]
+FROM [Members] AS [m]
+INNER JOIN [Persons] AS [p] ON [m].[PersonId] = [p].[Id]
+WHERE [m].[UserId] = @__userId_0
+2021-05-02 13:30:20.073 +01:00 [INF] Executed DbCommand (13ms) [Parameters=[@__MemberId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT DISTINCT [l].[Id], [l].[ApprovalDate], [l].[ApprovalStatus], [l].[Comments], [l].[EmployeeNumber], [l].[GuarantorEmail], [l].[GuarantorName], [l].[LoanApplicationId]
+FROM [LoanGuarantors] AS [l]
+INNER JOIN [LoanApplications] AS [l0] ON [l].[LoanApplicationId] = [l0].[Id]
+WHERE [l0].[MemberId] = @__MemberId_0
+2021-05-02 13:30:20.096 +01:00 [INF] Executing ObjectResult, writing value of type 'COOP.Banking.Data.ServiceResponse`1[[System.Collections.Generic.List`1[[COOP.Banking.Data.DTO.LoanGuarantorDTO, COOP.Banking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-05-02 13:30:20.107 +01:00 [INF] Executed action COOP.Banking.Controllers.LoanController.GetGuarantorsByMember (COOP.Banking) in 90.6733ms
+2021-05-02 13:30:20.114 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.LoanController.GetGuarantorsByMember (COOP.Banking)'
+2021-05-02 13:30:20.122 +01:00 [INF] Request finished in 144.6884ms 200 application/json; charset=utf-8
+2021-05-02 13:30:21.901 +01:00 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44319/api/loantype/amount/1  
+2021-05-02 13:30:21.934 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:21.950 +01:00 [INF] Request finished in 54.4678ms 204 
+2021-05-02 13:30:21.962 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/loantype/amount/1  
+2021-05-02 13:30:21.974 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:21.978 +01:00 [INF] Successfully validated the token.
+2021-05-02 13:30:21.981 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.LoanConfigController.GetLoanTypeDetails (COOP.Banking)'
+2021-05-02 13:30:21.995 +01:00 [INF] Route matched with {action = "GetLoanTypeDetails", controller = "LoanConfig"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetLoanTypeDetails(Int32) on controller COOP.Banking.Controllers.LoanConfigController (COOP.Banking).
+2021-05-02 13:30:22.006 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:30:22.014 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-05-02 13:30:22.024 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Active], [m].[ApprovalCount], [m].[Approved], [m].[Deleted], [m].[EmployeeNumber], [m].[EmploymentDate], [m].[HasPaidFee], [m].[Location], [m].[MemberType], [m].[PersonId], [m].[RegistrationDate], [m].[RetirementDate], [m].[Tag], [m].[UserId], [p].[Id], [p].[Address1], [p].[Address2], [p].[Country], [p].[CreatedBy], [p].[DateCreated], [p].[DateOfBirth], [p].[Email], [p].[FirstName], [p].[LastModifiedBy], [p].[LastModifiedDate], [p].[LastName], [p].[MaritalStatus], [p].[MiddleName], [p].[MobileNumber], [p].[PersonalEmail], [p].[Sex], [p].[StateId], [p].[Title], [p].[WorkPhone]
+FROM [Members] AS [m]
+INNER JOIN [Persons] AS [p] ON [m].[PersonId] = [p].[Id]
+WHERE [m].[UserId] = @__userId_0
+2021-05-02 13:30:22.063 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@__LoanId_0='?' (DbType = Int32), @__memberTypeId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[AdminChargeAmount], [l].[AdminChargeType], [l].[AllowConcurent], [l].[AllowPartialOffset], [l].[AllowTenureAdjustment], [l].[AllowTopUp], [l].[ConcurrentLoanCount], [l].[ConcurrentQualifyingPeriods], [l].[ExistingLoanFeeAmount], [l].[GuarantorCount], [l].[GuarantorMaximumAmount], [l].[IntrestRate], [l].[IsATargetLoan], [l].[LoanId], [l].[LumpSumSavingsAmount], [l].[MaxLoanAmount], [l].[MaxMonthlyRepayPeriod], [l].[MemberTypeId], [l].[MinLoanAmount], [l].[MinMonthlyRepayPeriod], [l].[MonthlyRepayPeriod], [l].[MonthlySavingsAmount], [l].[PeriodBeforeOffset], [l].[RequiresGuarantors], [l].[ServiceYearDuration], [l].[UseYearsOfService], [l].[WaitingPeriod], [l0].[Id], [l0].[Active], [l0].[Description], [l0].[LoanCode], [l0].[LoanType], [l0].[Name]
+FROM [LoanConfigs] AS [l]
+INNER JOIN [Loans] AS [l0] ON [l].[LoanId] = [l0].[Id]
+WHERE ([l].[LoanId] = @__LoanId_0) AND ([l].[MemberTypeId] = @__memberTypeId_1)
+2021-05-02 13:30:22.124 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[@__MemberId_0='?' (DbType = Int32), @__LoanId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[AccountName], [l].[AccountNumber], [l].[ApprovalCount], [l].[Approved], [l].[BankCode], [l].[BankName], [l].[DateSubmitted], [l].[EffectiveDate], [l].[GuarantorApprovalCount], [l].[Interest], [l].[IsPaid], [l].[LoanAmount], [l].[LoanCondition], [l].[LoanId], [l].[MemberId], [l].[MethodOfCollectionId], [l].[Principal], [l].[RepaymentPeriod], [l].[RequiredGuarantorsCount], [l].[Status], [l].[Tag]
+FROM [LoanApplications] AS [l]
+WHERE (([l].[MemberId] = @__MemberId_0) AND ([l].[LoanId] = @__LoanId_1)) AND [l].[LoanCondition] IN (0, 1)
+2021-05-02 13:30:22.133 +01:00 [INF] Executing ObjectResult, writing value of type 'COOP.Banking.Data.DTO.LoanConfigParamDTO'.
+2021-05-02 13:30:22.159 +01:00 [INF] Executed action COOP.Banking.Controllers.LoanConfigController.GetLoanTypeDetails (COOP.Banking) in 160.1775ms
+2021-05-02 13:30:22.165 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.LoanConfigController.GetLoanTypeDetails (COOP.Banking)'
+2021-05-02 13:30:22.170 +01:00 [INF] Request finished in 208.9238ms 200 application/json; charset=utf-8
+2021-05-02 13:30:40.820 +01:00 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44319/api/loantype/amount/3  
+2021-05-02 13:30:40.826 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:40.832 +01:00 [INF] Request finished in 12.0951ms 204 
+2021-05-02 13:30:40.847 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/loantype/amount/3  
+2021-05-02 13:30:40.853 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:30:40.859 +01:00 [INF] Successfully validated the token.
+2021-05-02 13:30:40.863 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.LoanConfigController.GetLoanTypeDetails (COOP.Banking)'
+2021-05-02 13:30:40.872 +01:00 [INF] Route matched with {action = "GetLoanTypeDetails", controller = "LoanConfig"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetLoanTypeDetails(Int32) on controller COOP.Banking.Controllers.LoanConfigController (COOP.Banking).
+2021-05-02 13:30:40.886 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:30:40.900 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-05-02 13:30:40.912 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Active], [m].[ApprovalCount], [m].[Approved], [m].[Deleted], [m].[EmployeeNumber], [m].[EmploymentDate], [m].[HasPaidFee], [m].[Location], [m].[MemberType], [m].[PersonId], [m].[RegistrationDate], [m].[RetirementDate], [m].[Tag], [m].[UserId], [p].[Id], [p].[Address1], [p].[Address2], [p].[Country], [p].[CreatedBy], [p].[DateCreated], [p].[DateOfBirth], [p].[Email], [p].[FirstName], [p].[LastModifiedBy], [p].[LastModifiedDate], [p].[LastName], [p].[MaritalStatus], [p].[MiddleName], [p].[MobileNumber], [p].[PersonalEmail], [p].[Sex], [p].[StateId], [p].[Title], [p].[WorkPhone]
+FROM [Members] AS [m]
+INNER JOIN [Persons] AS [p] ON [m].[PersonId] = [p].[Id]
+WHERE [m].[UserId] = @__userId_0
+2021-05-02 13:30:40.922 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__LoanId_0='?' (DbType = Int32), @__memberTypeId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[AdminChargeAmount], [l].[AdminChargeType], [l].[AllowConcurent], [l].[AllowPartialOffset], [l].[AllowTenureAdjustment], [l].[AllowTopUp], [l].[ConcurrentLoanCount], [l].[ConcurrentQualifyingPeriods], [l].[ExistingLoanFeeAmount], [l].[GuarantorCount], [l].[GuarantorMaximumAmount], [l].[IntrestRate], [l].[IsATargetLoan], [l].[LoanId], [l].[LumpSumSavingsAmount], [l].[MaxLoanAmount], [l].[MaxMonthlyRepayPeriod], [l].[MemberTypeId], [l].[MinLoanAmount], [l].[MinMonthlyRepayPeriod], [l].[MonthlyRepayPeriod], [l].[MonthlySavingsAmount], [l].[PeriodBeforeOffset], [l].[RequiresGuarantors], [l].[ServiceYearDuration], [l].[UseYearsOfService], [l].[WaitingPeriod], [l0].[Id], [l0].[Active], [l0].[Description], [l0].[LoanCode], [l0].[LoanType], [l0].[Name]
+FROM [LoanConfigs] AS [l]
+INNER JOIN [Loans] AS [l0] ON [l].[LoanId] = [l0].[Id]
+WHERE ([l].[LoanId] = @__LoanId_0) AND ([l].[MemberTypeId] = @__memberTypeId_1)
+2021-05-02 13:30:40.931 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__MemberId_0='?' (DbType = Int32), @__LoanId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[AccountName], [l].[AccountNumber], [l].[ApprovalCount], [l].[Approved], [l].[BankCode], [l].[BankName], [l].[DateSubmitted], [l].[EffectiveDate], [l].[GuarantorApprovalCount], [l].[Interest], [l].[IsPaid], [l].[LoanAmount], [l].[LoanCondition], [l].[LoanId], [l].[MemberId], [l].[MethodOfCollectionId], [l].[Principal], [l].[RepaymentPeriod], [l].[RequiredGuarantorsCount], [l].[Status], [l].[Tag]
+FROM [LoanApplications] AS [l]
+WHERE (([l].[MemberId] = @__MemberId_0) AND ([l].[LoanId] = @__LoanId_1)) AND [l].[LoanCondition] IN (0, 1)
+2021-05-02 13:30:40.939 +01:00 [INF] Executing ObjectResult, writing value of type 'COOP.Banking.Data.DTO.LoanConfigParamDTO'.
+2021-05-02 13:30:40.948 +01:00 [INF] Executed action COOP.Banking.Controllers.LoanConfigController.GetLoanTypeDetails (COOP.Banking) in 71.3394ms
+2021-05-02 13:30:40.955 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.LoanConfigController.GetLoanTypeDetails (COOP.Banking)'
+2021-05-02 13:30:40.975 +01:00 [INF] Request finished in 127.9867ms 200 application/json; charset=utf-8
+2021-05-02 13:32:42.550 +01:00 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44319/api/Members/Usertype  
+2021-05-02 13:32:42.553 +01:00 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44319/api/Members/Usertype  
+2021-05-02 13:32:42.552 +01:00 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44319/api/LoanCongfig/Member/Type  
+2021-05-02 13:32:42.561 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:32:42.561 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:32:42.569 +01:00 [INF] Request finished in 16.2402ms 204 
+2021-05-02 13:32:42.564 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:32:42.582 +01:00 [INF] Request finished in 32.2521ms 204 
+2021-05-02 13:32:42.593 +01:00 [INF] Request finished in 40.6269ms 204 
+2021-05-02 13:32:42.550 +01:00 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44319/api/MemberBalances/balance  
+2021-05-02 13:32:42.629 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Payments/modes/All  
+2021-05-02 13:32:42.632 +01:00 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44319/api/Loans/employeenumber  
+2021-05-02 13:32:42.632 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:32:42.639 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:32:42.640 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:32:42.647 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.PaymentsController.GetModesAsync (COOP.Banking)'
+2021-05-02 13:32:42.655 +01:00 [INF] Request finished in 23.1611ms 204 
+2021-05-02 13:32:42.663 +01:00 [INF] Route matched with {action = "GetModes", controller = "Payments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetModesAsync() on controller COOP.Banking.Controllers.PaymentsController (COOP.Banking).
+2021-05-02 13:32:42.647 +01:00 [INF] Request finished in 96.9399ms 204 
+2021-05-02 13:32:42.676 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:32:42.680 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/LoanCongfig/Member/Type  
+2021-05-02 13:32:42.674 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Members/Usertype  
+2021-05-02 13:32:42.712 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:32:42.719 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:32:42.683 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/MemberBalances/balance  
+2021-05-02 13:32:42.727 +01:00 [INF] Successfully validated the token.
+2021-05-02 13:32:42.730 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:32:42.734 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.LoanConfigController.GetLoansByMemTypeAsync (COOP.Banking)'
+2021-05-02 13:32:42.732 +01:00 [INF] Successfully validated the token.
+2021-05-02 13:32:42.741 +01:00 [INF] Route matched with {action = "GetLoansByMemType", controller = "LoanConfig"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetLoansByMemTypeAsync() on controller COOP.Banking.Controllers.LoanConfigController (COOP.Banking).
+2021-05-02 13:32:42.741 +01:00 [INF] Successfully validated the token.
+2021-05-02 13:32:42.749 +01:00 [INF] Authorization was successful.
+2021-05-02 13:32:42.752 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.MemberBalancesController.GetBalanceAsync (COOP.Banking)'
+2021-05-02 13:32:42.754 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:32:42.757 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.MembersController.GetAsyncUserId (COOP.Banking)'
+2021-05-02 13:32:42.761 +01:00 [INF] Route matched with {action = "GetBalance", controller = "MemberBalances"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetBalanceAsync() on controller COOP.Banking.Controllers.MemberBalancesController (COOP.Banking).
+2021-05-02 13:32:42.768 +01:00 [INF] Route matched with {action = "GetAsyncUserId", controller = "Members"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAsyncUserId() on controller COOP.Banking.Controllers.MembersController (COOP.Banking).
+2021-05-02 13:32:42.775 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:32:42.777 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Loans/employeenumber  
+2021-05-02 13:32:42.778 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:32:42.787 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:32:42.797 +01:00 [INF] Successfully validated the token.
+2021-05-02 13:32:42.802 +01:00 [INF] Executed DbCommand (108ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Active], [m].[Description]
+FROM [ModeOfPayments] AS [m]
+WHERE [m].[Active] = CAST(1 AS bit)
+2021-05-02 13:32:42.802 +01:00 [INF] Executed DbCommand (24ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-05-02 13:32:42.804 +01:00 [INF] Authorization was successful.
+2021-05-02 13:32:42.831 +01:00 [INF] Executing ObjectResult, writing value of type 'COOP.Banking.Data.ServiceResponse`1[[System.Collections.Generic.List`1[[COOP.Banking.Data.DTO.ModeOfPaymentDTO, COOP.Banking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-05-02 13:32:42.859 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.LoanController.GetLoanByMemberEmployeeNumber (COOP.Banking)'
+2021-05-02 13:32:42.877 +01:00 [INF] Route matched with {action = "GetLoanByMemberEmployeeNumber", controller = "Loan"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLoanByMemberEmployeeNumber() on controller COOP.Banking.Controllers.LoanController (COOP.Banking).
+2021-05-02 13:32:42.882 +01:00 [INF] Executed DbCommand (95ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-05-02 13:32:42.888 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:32:42.887 +01:00 [INF] Executed DbCommand (41ms) [Parameters=[@__memType_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AdminChargeAmount], [t].[AdminChargeType], [t].[AllowConcurent], [t].[AllowPartialOffset], [t].[AllowTenureAdjustment], [t].[AllowTopUp], [t].[ConcurrentLoanCount], [t].[ConcurrentQualifyingPeriods], [t].[ExistingLoanFeeAmount], [t].[GuarantorCount], [t].[GuarantorMaximumAmount], [t].[IntrestRate], [t].[IsATargetLoan], [t].[LoanId], [t].[LumpSumSavingsAmount], [t].[MaxLoanAmount], [t].[MaxMonthlyRepayPeriod], [t].[MemberTypeId], [t].[MinLoanAmount], [t].[MinMonthlyRepayPeriod], [t].[MonthlyRepayPeriod], [t].[MonthlySavingsAmount], [t].[PeriodBeforeOffset], [t].[RequiresGuarantors], [t].[ServiceYearDuration], [t].[UseYearsOfService], [t].[WaitingPeriod], [l0].[Id], [l0].[Active], [l0].[Description], [l0].[LoanCode], [l0].[LoanType], [l0].[Name], [m].[Id], [m].[Description]
+FROM (
+    SELECT DISTINCT [l].[Id], [l].[AdminChargeAmount], [l].[AdminChargeType], [l].[AllowConcurent], [l].[AllowPartialOffset], [l].[AllowTenureAdjustment], [l].[AllowTopUp], [l].[ConcurrentLoanCount], [l].[ConcurrentQualifyingPeriods], [l].[ExistingLoanFeeAmount], [l].[GuarantorCount], [l].[GuarantorMaximumAmount], [l].[IntrestRate], [l].[IsATargetLoan], [l].[LoanId], [l].[LumpSumSavingsAmount], [l].[MaxLoanAmount], [l].[MaxMonthlyRepayPeriod], [l].[MemberTypeId], [l].[MinLoanAmount], [l].[MinMonthlyRepayPeriod], [l].[MonthlyRepayPeriod], [l].[MonthlySavingsAmount], [l].[PeriodBeforeOffset], [l].[RequiresGuarantors], [l].[ServiceYearDuration], [l].[UseYearsOfService], [l].[WaitingPeriod]
+    FROM [LoanConfigs] AS [l]
+    WHERE [l].[MemberTypeId] = @__memType_0
+) AS [t]
+INNER JOIN [Loans] AS [l0] ON [t].[LoanId] = [l0].[Id]
+INNER JOIN [MemberTypes] AS [m] ON [t].[MemberTypeId] = [m].[Id]
+2021-05-02 13:32:42.883 +01:00 [INF] Executed action COOP.Banking.Controllers.PaymentsController.GetModesAsync (COOP.Banking) in 208.4681ms
+2021-05-02 13:32:42.904 +01:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[COOP.Banking.Data.DTO.LoanConfigDTO, COOP.Banking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-02 13:32:42.910 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.PaymentsController.GetModesAsync (COOP.Banking)'
+2021-05-02 13:32:42.920 +01:00 [INF] Executed action COOP.Banking.Controllers.LoanConfigController.GetLoansByMemTypeAsync (COOP.Banking) in 171.0309ms
+2021-05-02 13:32:42.922 +01:00 [INF] Executed DbCommand (39ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-05-02 13:32:42.928 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.LoanConfigController.GetLoansByMemTypeAsync (COOP.Banking)'
+2021-05-02 13:32:42.922 +01:00 [INF] Request finished in 293.0538ms 200 application/json; charset=utf-8
+2021-05-02 13:32:42.936 +01:00 [INF] Request finished in 256.2711ms 200 application/json; charset=utf-8
+2021-05-02 13:32:42.942 +01:00 [INF] Executed DbCommand (40ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-05-02 13:32:42.942 +01:00 [INF] Executed DbCommand (41ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Active], [m].[ApprovalCount], [m].[Approved], [m].[Deleted], [m].[EmployeeNumber], [m].[EmploymentDate], [m].[HasPaidFee], [m].[Location], [m].[MemberType], [m].[PersonId], [m].[RegistrationDate], [m].[RetirementDate], [m].[Tag], [m].[UserId], [p].[Id], [p].[Address1], [p].[Address2], [p].[Country], [p].[CreatedBy], [p].[DateCreated], [p].[DateOfBirth], [p].[Email], [p].[FirstName], [p].[LastModifiedBy], [p].[LastModifiedDate], [p].[LastName], [p].[MaritalStatus], [p].[MiddleName], [p].[MobileNumber], [p].[PersonalEmail], [p].[Sex], [p].[StateId], [p].[Title], [p].[WorkPhone]
+FROM [Members] AS [m]
+INNER JOIN [Persons] AS [p] ON [m].[PersonId] = [p].[Id]
+WHERE [m].[UserId] = @__userId_0
+2021-05-02 13:32:42.949 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Active], [m].[ApprovalCount], [m].[Approved], [m].[Deleted], [m].[EmployeeNumber], [m].[EmploymentDate], [m].[HasPaidFee], [m].[Location], [m].[MemberType], [m].[PersonId], [m].[RegistrationDate], [m].[RetirementDate], [m].[Tag], [m].[UserId], [p].[Id], [p].[Address1], [p].[Address2], [p].[Country], [p].[CreatedBy], [p].[DateCreated], [p].[DateOfBirth], [p].[Email], [p].[FirstName], [p].[LastModifiedBy], [p].[LastModifiedDate], [p].[LastName], [p].[MaritalStatus], [p].[MiddleName], [p].[MobileNumber], [p].[PersonalEmail], [p].[Sex], [p].[StateId], [p].[Title], [p].[WorkPhone]
+FROM [Members] AS [m]
+INNER JOIN [Persons] AS [p] ON [m].[PersonId] = [p].[Id]
+WHERE [m].[UserId] = @__userId_0
+2021-05-02 13:32:42.975 +01:00 [INF] Executed DbCommand (14ms) [Parameters=[@__MemberId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[BalanceType], [m].[CurrentBalance], [m].[ItemId], [m].[MemberId]
+FROM [MemberBalances] AS [m]
+WHERE [m].[MemberId] = @__MemberId_0
+2021-05-02 13:32:42.982 +01:00 [INF] Executing ObjectResult, writing value of type 'COOP.Banking.Data.ServiceResponse`1[[COOP.Banking.Data.DTO.MemberDTO, COOP.Banking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-02 13:32:42.981 +01:00 [INF] Executed DbCommand (31ms) [Parameters=[@__EmployeeNumber_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[AccountName], [l].[AccountNumber], [l].[ApprovalCount], [l].[Approved], [l].[BankCode], [l].[BankName], [l].[DateSubmitted], [l].[EffectiveDate], [l].[GuarantorApprovalCount], [l].[Interest], [l].[IsPaid], [l].[LoanAmount], [l].[LoanCondition], [l].[LoanId], [l].[MemberId], [l].[MethodOfCollectionId], [l].[Principal], [l].[RepaymentPeriod], [l].[RequiredGuarantorsCount], [l].[Status], [l].[Tag], [l0].[Id], [l0].[Active], [l0].[Description], [l0].[LoanCode], [l0].[LoanType], [l0].[Name], [m].[Id], [m].[Active], [m].[ApprovalCount], [m].[Approved], [m].[Deleted], [m].[EmployeeNumber], [m].[EmploymentDate], [m].[HasPaidFee], [m].[Location], [m].[MemberType], [m].[PersonId], [m].[RegistrationDate], [m].[RetirementDate], [m].[Tag], [m].[UserId], [p].[Id], [p].[Address1], [p].[Address2], [p].[Country], [p].[CreatedBy], [p].[DateCreated], [p].[DateOfBirth], [p].[Email], [p].[FirstName], [p].[LastModifiedBy], [p].[LastModifiedDate], [p].[LastName], [p].[MaritalStatus], [p].[MiddleName], [p].[MobileNumber], [p].[PersonalEmail], [p].[Sex], [p].[StateId], [p].[Title], [p].[WorkPhone]
+FROM [LoanApplications] AS [l]
+INNER JOIN [Members] AS [m] ON [l].[MemberId] = [m].[Id]
+INNER JOIN [Loans] AS [l0] ON [l].[LoanId] = [l0].[Id]
+INNER JOIN [Persons] AS [p] ON [m].[PersonId] = [p].[Id]
+WHERE [m].[EmployeeNumber] = @__EmployeeNumber_0
+2021-05-02 13:32:42.997 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[@__MemberId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[MemberId], [m].[SavingsAmount], [m].[Type]
+FROM [MemberSavings] AS [m]
+WHERE [m].[MemberId] = @__MemberId_0
+2021-05-02 13:32:43.002 +01:00 [INF] Executed action COOP.Banking.Controllers.MembersController.GetAsyncUserId (COOP.Banking) in 226.719ms
+2021-05-02 13:32:43.030 +01:00 [INF] Executing ObjectResult, writing value of type 'COOP.Banking.Data.ServiceResponse`1[[COOP.Banking.Data.DTO.BalancesDTO, COOP.Banking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-02 13:32:43.036 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.MembersController.GetAsyncUserId (COOP.Banking)'
+2021-05-02 13:32:43.003 +01:00 [INF] Executing ObjectResult, writing value of type 'COOP.Banking.Data.ServiceResponse`1[[System.Collections.Generic.List`1[[COOP.Banking.Data.DTO.LoanApplicationDTO, COOP.Banking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-05-02 13:32:43.043 +01:00 [INF] Request finished in 369.0332ms 200 application/json; charset=utf-8
+2021-05-02 13:32:43.043 +01:00 [INF] Executed action COOP.Banking.Controllers.MemberBalancesController.GetBalanceAsync (COOP.Banking) in 270.5784ms
+2021-05-02 13:32:43.055 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/banks/All  
+2021-05-02 13:32:43.059 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.MemberBalancesController.GetBalanceAsync (COOP.Banking)'
+2021-05-02 13:32:43.063 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:32:43.055 +01:00 [INF] Executed action COOP.Banking.Controllers.LoanController.GetLoanByMemberEmployeeNumber (COOP.Banking) in 167.5921ms
+2021-05-02 13:32:43.066 +01:00 [INF] Request finished in 383.8146ms 200 application/json; charset=utf-8
+2021-05-02 13:32:43.072 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.BanksController.GetAsync (COOP.Banking)'
+2021-05-02 13:32:43.076 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.LoanController.GetLoanByMemberEmployeeNumber (COOP.Banking)'
+2021-05-02 13:32:43.084 +01:00 [INF] Route matched with {action = "Get", controller = "Banks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAsync() on controller COOP.Banking.Controllers.BanksController (COOP.Banking).
+2021-05-02 13:32:43.093 +01:00 [INF] Request finished in 317.2922ms 200 application/json; charset=utf-8
+2021-05-02 13:32:43.030 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Members/Usertype  
+2021-05-02 13:32:43.101 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:32:43.108 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:32:43.114 +01:00 [INF] Successfully validated the token.
+2021-05-02 13:32:43.121 +01:00 [INF] Authorization was successful.
+2021-05-02 13:32:43.124 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BankCode], [b].[BankName]
+FROM [Banks] AS [b]
+ORDER BY [b].[BankName]
+2021-05-02 13:32:43.129 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.MembersController.GetAsyncUserId (COOP.Banking)'
+2021-05-02 13:32:43.135 +01:00 [INF] Route matched with {action = "GetAsyncUserId", controller = "Members"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAsyncUserId() on controller COOP.Banking.Controllers.MembersController (COOP.Banking).
+2021-05-02 13:32:43.138 +01:00 [INF] Executing ObjectResult, writing value of type 'COOP.Banking.Data.ServiceResponse`1[[System.Collections.Generic.List`1[[COOP.Banking.Data.DTO.BankDTO, COOP.Banking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-05-02 13:32:43.144 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:32:43.144 +01:00 [INF] Executed action COOP.Banking.Controllers.BanksController.GetAsync (COOP.Banking) in 47.3887ms
+2021-05-02 13:32:43.153 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.BanksController.GetAsync (COOP.Banking)'
+2021-05-02 13:32:43.160 +01:00 [INF] Request finished in 104.2346ms 200 application/json; charset=utf-8
+2021-05-02 13:32:43.163 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-05-02 13:32:43.180 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Active], [m].[ApprovalCount], [m].[Approved], [m].[Deleted], [m].[EmployeeNumber], [m].[EmploymentDate], [m].[HasPaidFee], [m].[Location], [m].[MemberType], [m].[PersonId], [m].[RegistrationDate], [m].[RetirementDate], [m].[Tag], [m].[UserId], [p].[Id], [p].[Address1], [p].[Address2], [p].[Country], [p].[CreatedBy], [p].[DateCreated], [p].[DateOfBirth], [p].[Email], [p].[FirstName], [p].[LastModifiedBy], [p].[LastModifiedDate], [p].[LastName], [p].[MaritalStatus], [p].[MiddleName], [p].[MobileNumber], [p].[PersonalEmail], [p].[Sex], [p].[StateId], [p].[Title], [p].[WorkPhone]
+FROM [Members] AS [m]
+INNER JOIN [Persons] AS [p] ON [m].[PersonId] = [p].[Id]
+WHERE [m].[UserId] = @__userId_0
+2021-05-02 13:32:43.190 +01:00 [INF] Executing ObjectResult, writing value of type 'COOP.Banking.Data.ServiceResponse`1[[COOP.Banking.Data.DTO.MemberDTO, COOP.Banking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-02 13:32:43.197 +01:00 [INF] Executed action COOP.Banking.Controllers.MembersController.GetAsyncUserId (COOP.Banking) in 54.5433ms
+2021-05-02 13:32:43.208 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.MembersController.GetAsyncUserId (COOP.Banking)'
+2021-05-02 13:32:43.215 +01:00 [INF] Request finished in 185.0154ms 200 application/json; charset=utf-8
+2021-05-02 13:32:43.238 +01:00 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44319/api/Loans/guarantor  
+2021-05-02 13:32:43.254 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:32:43.260 +01:00 [INF] Request finished in 21.2629ms 204 
+2021-05-02 13:32:43.269 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Loans/guarantor  
+2021-05-02 13:32:43.290 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:32:43.344 +01:00 [INF] Successfully validated the token.
+2021-05-02 13:32:43.353 +01:00 [INF] Authorization was successful.
+2021-05-02 13:32:43.361 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.LoanController.GetGuarantorsByMember (COOP.Banking)'
+2021-05-02 13:32:43.366 +01:00 [INF] Route matched with {action = "GetGuarantorsByMember", controller = "Loan"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetGuarantorsByMember() on controller COOP.Banking.Controllers.LoanController (COOP.Banking).
+2021-05-02 13:32:43.420 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:32:43.486 +01:00 [INF] Executed DbCommand (42ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-05-02 13:32:43.509 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Active], [m].[ApprovalCount], [m].[Approved], [m].[Deleted], [m].[EmployeeNumber], [m].[EmploymentDate], [m].[HasPaidFee], [m].[Location], [m].[MemberType], [m].[PersonId], [m].[RegistrationDate], [m].[RetirementDate], [m].[Tag], [m].[UserId], [p].[Id], [p].[Address1], [p].[Address2], [p].[Country], [p].[CreatedBy], [p].[DateCreated], [p].[DateOfBirth], [p].[Email], [p].[FirstName], [p].[LastModifiedBy], [p].[LastModifiedDate], [p].[LastName], [p].[MaritalStatus], [p].[MiddleName], [p].[MobileNumber], [p].[PersonalEmail], [p].[Sex], [p].[StateId], [p].[Title], [p].[WorkPhone]
+FROM [Members] AS [m]
+INNER JOIN [Persons] AS [p] ON [m].[PersonId] = [p].[Id]
+WHERE [m].[UserId] = @__userId_0
+2021-05-02 13:32:43.539 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__MemberId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT DISTINCT [l].[Id], [l].[ApprovalDate], [l].[ApprovalStatus], [l].[Comments], [l].[EmployeeNumber], [l].[GuarantorEmail], [l].[GuarantorName], [l].[LoanApplicationId]
+FROM [LoanGuarantors] AS [l]
+INNER JOIN [LoanApplications] AS [l0] ON [l].[LoanApplicationId] = [l0].[Id]
+WHERE [l0].[MemberId] = @__MemberId_0
+2021-05-02 13:32:43.552 +01:00 [INF] Executing ObjectResult, writing value of type 'COOP.Banking.Data.ServiceResponse`1[[System.Collections.Generic.List`1[[COOP.Banking.Data.DTO.LoanGuarantorDTO, COOP.Banking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-05-02 13:32:43.559 +01:00 [INF] Executed action COOP.Banking.Controllers.LoanController.GetGuarantorsByMember (COOP.Banking) in 171.4062ms
+2021-05-02 13:32:43.564 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.LoanController.GetGuarantorsByMember (COOP.Banking)'
+2021-05-02 13:32:43.569 +01:00 [INF] Request finished in 299.3468ms 200 application/json; charset=utf-8
+2021-05-02 13:34:50.055 +01:00 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44319/api/loantype/amount/1  
+2021-05-02 13:34:50.063 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:34:50.073 +01:00 [INF] Request finished in 18.4574ms 204 
+2021-05-02 13:34:50.080 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/loantype/amount/1  
+2021-05-02 13:34:50.118 +01:00 [INF] CORS policy execution successful.
+2021-05-02 13:34:50.128 +01:00 [INF] Successfully validated the token.
+2021-05-02 13:34:50.132 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.LoanConfigController.GetLoanTypeDetails (COOP.Banking)'
+2021-05-02 13:34:50.140 +01:00 [INF] Route matched with {action = "GetLoanTypeDetails", controller = "LoanConfig"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetLoanTypeDetails(Int32) on controller COOP.Banking.Controllers.LoanConfigController (COOP.Banking).
+2021-05-02 13:34:50.151 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-02 13:34:50.171 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-05-02 13:34:50.193 +01:00 [INF] Executed DbCommand (11ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Active], [m].[ApprovalCount], [m].[Approved], [m].[Deleted], [m].[EmployeeNumber], [m].[EmploymentDate], [m].[HasPaidFee], [m].[Location], [m].[MemberType], [m].[PersonId], [m].[RegistrationDate], [m].[RetirementDate], [m].[Tag], [m].[UserId], [p].[Id], [p].[Address1], [p].[Address2], [p].[Country], [p].[CreatedBy], [p].[DateCreated], [p].[DateOfBirth], [p].[Email], [p].[FirstName], [p].[LastModifiedBy], [p].[LastModifiedDate], [p].[LastName], [p].[MaritalStatus], [p].[MiddleName], [p].[MobileNumber], [p].[PersonalEmail], [p].[Sex], [p].[StateId], [p].[Title], [p].[WorkPhone]
+FROM [Members] AS [m]
+INNER JOIN [Persons] AS [p] ON [m].[PersonId] = [p].[Id]
+WHERE [m].[UserId] = @__userId_0
+2021-05-02 13:34:50.208 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[@__LoanId_0='?' (DbType = Int32), @__memberTypeId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[AdminChargeAmount], [l].[AdminChargeType], [l].[AllowConcurent], [l].[AllowPartialOffset], [l].[AllowTenureAdjustment], [l].[AllowTopUp], [l].[ConcurrentLoanCount], [l].[ConcurrentQualifyingPeriods], [l].[ExistingLoanFeeAmount], [l].[GuarantorCount], [l].[GuarantorMaximumAmount], [l].[IntrestRate], [l].[IsATargetLoan], [l].[LoanId], [l].[LumpSumSavingsAmount], [l].[MaxLoanAmount], [l].[MaxMonthlyRepayPeriod], [l].[MemberTypeId], [l].[MinLoanAmount], [l].[MinMonthlyRepayPeriod], [l].[MonthlyRepayPeriod], [l].[MonthlySavingsAmount], [l].[PeriodBeforeOffset], [l].[RequiresGuarantors], [l].[ServiceYearDuration], [l].[UseYearsOfService], [l].[WaitingPeriod], [l0].[Id], [l0].[Active], [l0].[Description], [l0].[LoanCode], [l0].[LoanType], [l0].[Name]
+FROM [LoanConfigs] AS [l]
+INNER JOIN [Loans] AS [l0] ON [l].[LoanId] = [l0].[Id]
+WHERE ([l].[LoanId] = @__LoanId_0) AND ([l].[MemberTypeId] = @__memberTypeId_1)
+2021-05-02 13:34:50.224 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[@__MemberId_0='?' (DbType = Int32), @__LoanId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[AccountName], [l].[AccountNumber], [l].[ApprovalCount], [l].[Approved], [l].[BankCode], [l].[BankName], [l].[DateSubmitted], [l].[EffectiveDate], [l].[GuarantorApprovalCount], [l].[Interest], [l].[IsPaid], [l].[LoanAmount], [l].[LoanCondition], [l].[LoanId], [l].[MemberId], [l].[MethodOfCollectionId], [l].[Principal], [l].[RepaymentPeriod], [l].[RequiredGuarantorsCount], [l].[Status], [l].[Tag]
+FROM [LoanApplications] AS [l]
+WHERE (([l].[MemberId] = @__MemberId_0) AND ([l].[LoanId] = @__LoanId_1)) AND [l].[LoanCondition] IN (0, 1)
+2021-05-02 13:34:50.231 +01:00 [INF] Executing ObjectResult, writing value of type 'COOP.Banking.Data.DTO.LoanConfigParamDTO'.
+2021-05-02 13:34:50.239 +01:00 [INF] Executed action COOP.Banking.Controllers.LoanConfigController.GetLoanTypeDetails (COOP.Banking) in 91.3411ms
+2021-05-02 13:34:50.244 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.LoanConfigController.GetLoanTypeDetails (COOP.Banking)'
+2021-05-02 13:34:50.248 +01:00 [INF] Request finished in 167.8611ms 200 application/json; charset=utf-8

@@ -1,0 +1,327 @@
+2021-05-16 05:34:47.283 +01:00 [INF] Application is shutting down...
+2021-05-16 05:36:39.382 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-16 05:36:39.740 +01:00 [INF] Now listening on: https://localhost:5001
+2021-05-16 05:36:39.742 +01:00 [INF] Now listening on: http://localhost:5000
+2021-05-16 05:36:39.744 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-16 05:36:39.745 +01:00 [INF] Hosting environment: Development
+2021-05-16 05:36:39.749 +01:00 [INF] Content root path: C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking
+2021-05-16 05:36:45.474 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2021-05-16 05:36:45.503 +01:00 [INF] Request finished in 34.6438ms 307 
+2021-05-16 05:36:45.626 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/  
+2021-05-16 05:36:45.709 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 05:36:45.718 +01:00 [INF] The file /index.html was not modified
+2021-05-16 05:36:45.721 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 05:36:45.732 +01:00 [INF] Request finished in 105.7034ms 304 text/html
+2021-05-16 05:36:45.806 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/css/chunk-vendors.538c1c70.css  
+2021-05-16 05:36:45.806 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/css/app.32d710f9.css  
+2021-05-16 05:36:45.806 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/js/app.f8a7f9d2.js  
+2021-05-16 05:36:45.806 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/js/chunk-vendors.fbb16dca.js  
+2021-05-16 05:36:45.806 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/src/assets/js/popper.min.js  
+2021-05-16 05:36:45.811 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 05:36:45.811 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 05:36:45.814 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 05:36:45.815 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 05:36:45.818 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 05:36:45.819 +01:00 [INF] The file /index.html was not modified
+2021-05-16 05:36:45.821 +01:00 [INF] The file /index.html was not modified
+2021-05-16 05:36:45.824 +01:00 [INF] The file /index.html was not modified
+2021-05-16 05:36:45.827 +01:00 [INF] The file /index.html was not modified
+2021-05-16 05:36:45.829 +01:00 [INF] The file /index.html was not modified
+2021-05-16 05:36:45.831 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 05:36:45.833 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 05:36:45.834 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 05:36:45.836 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 05:36:45.839 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 05:36:45.842 +01:00 [INF] Request finished in 36.2856ms 304 text/html
+2021-05-16 05:36:45.843 +01:00 [INF] Request finished in 37.6874ms 304 text/html
+2021-05-16 05:36:45.845 +01:00 [INF] Request finished in 39.1896ms 304 text/html
+2021-05-16 05:36:45.848 +01:00 [INF] Request finished in 41.3887ms 304 text/html
+2021-05-16 05:36:45.851 +01:00 [INF] Request finished in 44.6959ms 304 text/html
+2021-05-16 05:36:45.947 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico  
+2021-05-16 05:36:45.954 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 05:36:45.957 +01:00 [INF] The file /index.html was not modified
+2021-05-16 05:36:45.959 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 05:36:45.964 +01:00 [INF] Request finished in 17.6404ms 304 text/html
+2021-05-16 05:37:21.048 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/  
+2021-05-16 05:37:21.053 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 05:37:21.062 +01:00 [INF] The file /index.html was not modified
+2021-05-16 05:37:21.065 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 05:37:21.069 +01:00 [INF] Request finished in 21.5779ms 304 text/html
+2021-05-16 05:37:21.218 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico  
+2021-05-16 05:37:21.221 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 05:37:21.246 +01:00 [INF] Sending file. Request path: '/index.html'. Physical path: 'C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking\chev-test\dist\index.html'
+2021-05-16 05:37:21.250 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 05:37:21.252 +01:00 [INF] Request finished in 34.3273ms 200 text/html
+2021-05-16 05:47:17.376 +01:00 [INF] Application is shutting down...
+2021-05-16 05:48:15.245 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-16 05:48:15.534 +01:00 [INF] Now listening on: https://localhost:5001
+2021-05-16 05:48:15.546 +01:00 [INF] Now listening on: http://localhost:5000
+2021-05-16 05:48:15.552 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-16 05:48:15.554 +01:00 [INF] Hosting environment: Development
+2021-05-16 05:48:15.560 +01:00 [INF] Content root path: C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking
+2021-05-16 05:48:21.689 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2021-05-16 05:48:21.761 +01:00 [INF] Request finished in 78.0404ms 307 
+2021-05-16 05:48:39.762 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2021-05-16 05:48:39.767 +01:00 [INF] Request finished in 4.3236ms 307 
+2021-05-16 05:49:02.870 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2021-05-16 05:49:02.882 +01:00 [INF] Request finished in 12.8898ms 307 
+2021-05-16 05:49:02.941 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/  
+2021-05-16 05:49:03.095 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 05:49:03.142 +01:00 [INF] Sending file. Request path: '/index.html'. Physical path: 'C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking\chev-test\dist\index.html'
+2021-05-16 05:49:03.175 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 05:49:03.183 +01:00 [INF] Request finished in 243.0475ms 200 text/html
+2021-05-16 05:49:03.275 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/css/app.32d710f9.css  
+2021-05-16 05:49:03.276 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/css/chunk-vendors.538c1c70.css  
+2021-05-16 05:49:03.276 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/js/app.f8a7f9d2.js  
+2021-05-16 05:49:03.277 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/js/chunk-vendors.fbb16dca.js  
+2021-05-16 05:49:03.283 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 05:49:03.284 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 05:49:03.288 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 05:49:03.291 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 05:49:03.295 +01:00 [INF] Sending file. Request path: '/index.html'. Physical path: 'C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking\chev-test\dist\index.html'
+2021-05-16 05:49:03.297 +01:00 [INF] Sending file. Request path: '/index.html'. Physical path: 'C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking\chev-test\dist\index.html'
+2021-05-16 05:49:03.299 +01:00 [INF] Sending file. Request path: '/index.html'. Physical path: 'C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking\chev-test\dist\index.html'
+2021-05-16 05:49:03.306 +01:00 [INF] Sending file. Request path: '/index.html'. Physical path: 'C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking\chev-test\dist\index.html'
+2021-05-16 05:49:03.308 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 05:49:03.311 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 05:49:03.315 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 05:49:03.317 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 05:49:03.320 +01:00 [INF] Request finished in 45.1661ms 200 text/html
+2021-05-16 05:49:03.323 +01:00 [INF] Request finished in 47.6798ms 200 text/html
+2021-05-16 05:49:03.327 +01:00 [INF] Request finished in 50.5708ms 200 text/html
+2021-05-16 05:49:03.329 +01:00 [INF] Request finished in 52.4301ms 200 text/html
+2021-05-16 05:49:03.333 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/src/assets/js/popper.min.js  
+2021-05-16 05:49:03.347 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 05:49:03.362 +01:00 [INF] Sending file. Request path: '/index.html'. Physical path: 'C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking\chev-test\dist\index.html'
+2021-05-16 05:49:03.366 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 05:49:03.368 +01:00 [INF] Request finished in 35.0452ms 200 text/html
+2021-05-16 05:49:03.511 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico  
+2021-05-16 05:49:03.518 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 05:49:03.523 +01:00 [INF] Sending file. Request path: '/index.html'. Physical path: 'C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking\chev-test\dist\index.html'
+2021-05-16 05:49:03.527 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 05:49:03.531 +01:00 [INF] Request finished in 19.7386ms 200 text/html
+2021-05-16 05:50:05.997 +01:00 [INF] Application is shutting down...
+2021-05-16 06:07:53.394 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-16 06:07:53.675 +01:00 [INF] Now listening on: https://localhost:5001
+2021-05-16 06:07:53.677 +01:00 [INF] Now listening on: http://localhost:5000
+2021-05-16 06:07:53.680 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-16 06:07:53.683 +01:00 [INF] Hosting environment: Development
+2021-05-16 06:07:53.687 +01:00 [INF] Content root path: C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking
+2021-05-16 06:08:04.364 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2021-05-16 06:08:04.415 +01:00 [INF] Request finished in 56.201ms 307 
+2021-05-16 06:08:23.298 +01:00 [INF] Application is shutting down...
+2021-05-16 06:44:18.581 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-16 06:44:18.938 +01:00 [INF] Now listening on: https://localhost:5001
+2021-05-16 06:44:18.940 +01:00 [INF] Now listening on: http://localhost:5000
+2021-05-16 06:44:18.943 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-16 06:44:18.945 +01:00 [INF] Hosting environment: Development
+2021-05-16 06:44:18.947 +01:00 [INF] Content root path: C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking
+2021-05-16 06:44:24.405 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2021-05-16 06:44:24.485 +01:00 [INF] Request finished in 91.6648ms 307 
+2021-05-16 06:44:24.528 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/  
+2021-05-16 06:44:25.409 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 06:44:25.461 +01:00 [INF] Sending file. Request path: '/index.html'. Physical path: 'C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking\chev-test\dist\index.html'
+2021-05-16 06:44:25.473 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 06:44:25.486 +01:00 [INF] Request finished in 958.304ms 200 text/html
+2021-05-16 06:44:33.249 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/  
+2021-05-16 06:44:33.255 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 06:44:33.264 +01:00 [INF] The file /index.html was not modified
+2021-05-16 06:44:33.268 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 06:44:33.273 +01:00 [INF] Request finished in 26.0183ms 304 text/html
+2021-05-16 06:44:33.349 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico  
+2021-05-16 06:44:33.356 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 06:44:33.364 +01:00 [INF] Sending file. Request path: '/index.html'. Physical path: 'C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking\chev-test\dist\index.html'
+2021-05-16 06:44:33.367 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 06:44:33.371 +01:00 [INF] Request finished in 22.1028ms 200 text/html
+2021-05-16 07:03:37.904 +01:00 [INF] Application is shutting down...
+2021-05-16 07:04:06.666 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-16 07:04:06.961 +01:00 [INF] Now listening on: https://localhost:5001
+2021-05-16 07:04:06.965 +01:00 [INF] Now listening on: http://localhost:5000
+2021-05-16 07:04:06.967 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-16 07:04:06.969 +01:00 [INF] Hosting environment: Development
+2021-05-16 07:04:06.973 +01:00 [INF] Content root path: C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking
+2021-05-16 07:04:10.095 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2021-05-16 07:04:10.159 +01:00 [INF] Request finished in 66.3388ms 307 
+2021-05-16 07:04:10.193 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/  
+2021-05-16 07:04:10.304 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 07:04:10.318 +01:00 [INF] The file /index.html was not modified
+2021-05-16 07:04:10.321 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 07:04:10.335 +01:00 [INF] Request finished in 140.5149ms 304 text/html
+2021-05-16 07:04:10.551 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico  
+2021-05-16 07:04:10.555 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 07:04:10.559 +01:00 [INF] The file /index.html was not modified
+2021-05-16 07:04:10.563 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 07:04:10.568 +01:00 [INF] Request finished in 17.4182ms 304 text/html
+2021-05-16 07:57:03.567 +01:00 [INF] Application is shutting down...
+2021-05-16 08:05:41.737 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-16 08:05:42.011 +01:00 [INF] Now listening on: https://localhost:5001
+2021-05-16 08:05:42.013 +01:00 [INF] Now listening on: http://localhost:5000
+2021-05-16 08:05:42.016 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-16 08:05:42.018 +01:00 [INF] Hosting environment: Development
+2021-05-16 08:05:42.023 +01:00 [INF] Content root path: C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking
+2021-05-16 08:05:45.899 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2021-05-16 08:05:45.927 +01:00 [INF] Request finished in 37.7834ms 307 
+2021-05-16 08:09:38.544 +01:00 [INF] Application is shutting down...
+2021-05-16 13:04:24.348 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-16 13:04:24.623 +01:00 [INF] Now listening on: https://localhost:5001
+2021-05-16 13:04:24.626 +01:00 [INF] Now listening on: http://localhost:5000
+2021-05-16 13:04:24.628 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-16 13:04:24.630 +01:00 [INF] Hosting environment: Development
+2021-05-16 13:04:24.635 +01:00 [INF] Content root path: C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking
+2021-05-16 13:05:16.430 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/overview  
+2021-05-16 13:05:16.443 +01:00 [INF] Request finished in 16.1721ms 307 
+2021-05-16 13:05:16.509 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/overview  
+2021-05-16 13:05:16.877 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 13:05:16.900 +01:00 [INF] Sending file. Request path: '/index.html'. Physical path: 'C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking\chev-test\dist\index.html'
+2021-05-16 13:05:16.906 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 13:05:16.914 +01:00 [INF] Request finished in 404.7378ms 200 text/html
+2021-05-16 13:05:16.974 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/js/app.f8a7f9d2.js  
+2021-05-16 13:05:16.974 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/css/app.32d710f9.css  
+2021-05-16 13:05:16.974 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/js/chunk-vendors.fbb16dca.js  
+2021-05-16 13:05:16.974 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/src/assets/js/popper.min.js  
+2021-05-16 13:05:16.978 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 13:05:16.980 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 13:05:16.980 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 13:05:16.982 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-16 13:05:16.987 +01:00 [INF] Sending file. Request path: '/index.html'. Physical path: 'C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking\chev-test\dist\index.html'
+2021-05-16 13:05:16.993 +01:00 [INF] Sending file. Request path: '/index.html'. Physical path: 'C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking\chev-test\dist\index.html'
+2021-05-16 13:05:16.993 +01:00 [INF] Sending file. Request path: '/index.html'. Physical path: 'C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking\chev-test\dist\index.html'
+2021-05-16 13:05:16.998 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 13:05:17.001 +01:00 [INF] Sending file. Request path: '/index.html'. Physical path: 'C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking\chev-test\dist\index.html'
+2021-05-16 13:05:17.006 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 13:05:17.011 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 13:05:17.013 +01:00 [INF] Request finished in 39.0113ms 200 text/html
+2021-05-16 13:05:17.016 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-16 13:05:17.020 +01:00 [INF] Request finished in 46.1972ms 200 text/html
+2021-05-16 13:05:17.023 +01:00 [INF] Request finished in 48.9841ms 200 text/html
+2021-05-16 13:05:17.027 +01:00 [INF] Request finished in 52.5324ms 200 text/html
+2021-05-16 13:09:53.999 +01:00 [INF] Application is shutting down...
+2021-05-16 15:01:46.503 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-16 15:01:46.780 +01:00 [INF] Now listening on: https://localhost:5001
+2021-05-16 15:01:46.782 +01:00 [INF] Now listening on: http://localhost:5000
+2021-05-16 15:01:46.785 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-16 15:01:46.788 +01:00 [INF] Hosting environment: Development
+2021-05-16 15:01:46.791 +01:00 [INF] Content root path: C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking
+2021-05-16 15:16:40.024 +01:00 [INF] Application is shutting down...
+2021-05-16 15:20:30.614 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-16 15:20:30.880 +01:00 [INF] Now listening on: https://localhost:5001
+2021-05-16 15:20:30.883 +01:00 [INF] Now listening on: http://localhost:5000
+2021-05-16 15:20:30.887 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-16 15:20:30.889 +01:00 [INF] Hosting environment: Development
+2021-05-16 15:20:30.894 +01:00 [INF] Content root path: C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking
+2021-05-16 15:21:02.090 +01:00 [INF] Application is shutting down...
+2021-05-16 15:22:55.664 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-16 15:22:55.996 +01:00 [INF] Now listening on: https://localhost:5001
+2021-05-16 15:22:55.998 +01:00 [INF] Now listening on: http://localhost:5000
+2021-05-16 15:22:56.002 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-16 15:22:56.003 +01:00 [INF] Hosting environment: Development
+2021-05-16 15:22:56.007 +01:00 [INF] Content root path: C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking
+2021-05-16 15:23:21.838 +01:00 [INF] Application is shutting down...
+2021-05-16 15:23:36.458 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-16 15:23:36.727 +01:00 [INF] Now listening on: https://localhost:5001
+2021-05-16 15:23:36.730 +01:00 [INF] Now listening on: http://localhost:5000
+2021-05-16 15:23:36.733 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-16 15:23:36.735 +01:00 [INF] Hosting environment: Development
+2021-05-16 15:23:36.737 +01:00 [INF] Content root path: C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking
+2021-05-16 15:24:04.447 +01:00 [INF] Application is shutting down...
+2021-05-16 15:25:43.986 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-16 15:25:44.264 +01:00 [INF] Now listening on: https://localhost:5001
+2021-05-16 15:25:44.266 +01:00 [INF] Now listening on: http://localhost:5000
+2021-05-16 15:25:44.271 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-16 15:25:44.274 +01:00 [INF] Hosting environment: Development
+2021-05-16 15:25:44.278 +01:00 [INF] Content root path: C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking
+2021-05-16 15:26:19.985 +01:00 [INF] Application is shutting down...
+2021-05-16 15:39:51.718 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-16 15:39:51.994 +01:00 [FTL] Unable to start Kestrel.
+System.IO.IOException: Failed to bind to address http://127.0.0.1:8080: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, KestrelServerOptions serverOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2021-05-16 15:54:37.917 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-16 15:54:38.423 +01:00 [FTL] Unable to start Kestrel.
+System.IO.IOException: Failed to bind to address http://127.0.0.1:8080: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, KestrelServerOptions serverOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2021-05-16 15:55:13.210 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-16 15:55:13.508 +01:00 [INF] Now listening on: https://localhost:5001
+2021-05-16 15:55:13.510 +01:00 [INF] Now listening on: http://localhost:5000
+2021-05-16 15:55:13.514 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-16 15:55:13.519 +01:00 [INF] Hosting environment: Development
+2021-05-16 15:55:13.526 +01:00 [INF] Content root path: C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking
+2021-05-16 15:55:26.132 +01:00 [INF] Application is shutting down...
+2021-05-16 15:59:54.336 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-16 15:59:54.610 +01:00 [INF] Now listening on: https://localhost:5001
+2021-05-16 15:59:54.612 +01:00 [INF] Now listening on: http://localhost:5000
+2021-05-16 15:59:54.616 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-16 15:59:54.619 +01:00 [INF] Hosting environment: Development
+2021-05-16 15:59:54.623 +01:00 [INF] Content root path: C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking
+2021-05-16 16:01:49.604 +01:00 [INF] Application is shutting down...
+2021-05-16 16:04:14.466 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-16 16:04:14.740 +01:00 [INF] Now listening on: https://localhost:5001
+2021-05-16 16:04:14.742 +01:00 [INF] Now listening on: http://localhost:5000
+2021-05-16 16:04:14.744 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-16 16:04:14.748 +01:00 [INF] Hosting environment: Development
+2021-05-16 16:04:14.752 +01:00 [INF] Content root path: C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking
+2021-05-16 16:04:29.439 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Users/login  
+2021-05-16 16:04:29.454 +01:00 [INF] Request finished in 17.2595ms 307 
+2021-05-16 16:04:54.169 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Users/login  
+2021-05-16 16:04:54.172 +01:00 [INF] Request finished in 3.2188ms 307 
+2021-05-16 16:05:54.243 +01:00 [INF] Application is shutting down...
+2021-05-16 16:09:25.327 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-16 16:09:25.597 +01:00 [INF] Now listening on: https://localhost:5001
+2021-05-16 16:09:25.599 +01:00 [INF] Now listening on: http://localhost:5000
+2021-05-16 16:09:25.602 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-16 16:09:25.604 +01:00 [INF] Hosting environment: Development
+2021-05-16 16:09:25.606 +01:00 [INF] Content root path: C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking
+2021-05-16 16:09:53.701 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Users/login  
+2021-05-16 16:09:53.720 +01:00 [INF] Request finished in 23.5541ms 307 
+2021-05-16 16:11:25.225 +01:00 [INF] Application is shutting down...
+2021-05-16 16:11:31.661 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-16 16:11:31.905 +01:00 [INF] Now listening on: https://localhost:5001
+2021-05-16 16:11:31.907 +01:00 [INF] Now listening on: http://localhost:5000
+2021-05-16 16:11:31.911 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-16 16:11:31.915 +01:00 [INF] Hosting environment: Development
+2021-05-16 16:11:31.917 +01:00 [INF] Content root path: C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking
+2021-05-16 16:11:56.659 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Users/login  
+2021-05-16 16:11:56.671 +01:00 [INF] Request finished in 17.9347ms 307 
+2021-05-16 16:13:24.518 +01:00 [INF] Application is shutting down...
+2021-05-16 16:26:12.683 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-16 16:26:12.940 +01:00 [INF] Now listening on: https://localhost:5001
+2021-05-16 16:26:12.942 +01:00 [INF] Now listening on: http://localhost:5000
+2021-05-16 16:26:12.945 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-16 16:26:12.948 +01:00 [INF] Hosting environment: Development
+2021-05-16 16:26:12.951 +01:00 [INF] Content root path: C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking
+2021-05-16 16:29:10.335 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Users/login  
+2021-05-16 16:29:10.347 +01:00 [INF] Request finished in 15.3731ms 307 
+2021-05-16 21:19:43.517 +01:00 [INF] Application is shutting down...

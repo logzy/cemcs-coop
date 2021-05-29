@@ -1,0 +1,71 @@
+2021-04-29 15:47:38.634 +01:00 [INF] User profile is available. Using 'C:\Users\Abdullahi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-29 15:47:39.014 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-04-29 15:47:39.017 +01:00 [INF] Hosting environment: Development
+2021-04-29 15:47:39.019 +01:00 [INF] Content root path: C:\Users\Abdullahi\Desktop\Files\Chevron\COOP.Banking\COOP.Banking
+2021-04-29 15:47:39.055 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/  
+2021-04-29 15:47:39.194 +01:00 [INF] Request finished in 145.4198ms 404 
+2021-04-29 15:48:38.845 +01:00 [INF] User profile is available. Using 'C:\Users\Abdullahi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-29 15:48:39.096 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-04-29 15:48:39.097 +01:00 [INF] Hosting environment: Development
+2021-04-29 15:48:39.098 +01:00 [INF] Content root path: C:\Users\Abdullahi\Desktop\Files\Chevron\COOP.Banking\COOP.Banking
+2021-04-29 15:48:39.121 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/  
+2021-04-29 15:48:39.206 +01:00 [INF] Request finished in 89.4827ms 404 
+2021-04-29 15:48:43.566 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:44319/api/Users/ExternalLoginRedirect application/json 90
+2021-04-29 15:48:43.571 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.UsersController.ExternalLoginRedirect (COOP.Banking)'
+2021-04-29 15:48:43.617 +01:00 [INF] Route matched with {action = "ExternalLoginRedirect", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExternalLoginRedirect(COOP.Banking.Data.Authentication.LoginModel) on controller COOP.Banking.Controllers.UsersController (COOP.Banking).
+2021-04-29 15:48:44.734 +01:00 [WRN] No type was specified for the decimal property 'TotalWaiverFee' on entity type 'WaiverApplication'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2021-04-29 15:48:44.734 +01:00 [WRN] No type was specified for the decimal property 'Fee' on entity type 'WaiverApplicationDetail'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2021-04-29 15:48:44.734 +01:00 [WRN] No type was specified for the decimal property 'Interest' on entity type 'WaiverApplicationDetail'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2021-04-29 15:48:44.734 +01:00 [WRN] No type was specified for the decimal property 'LoanAmount' on entity type 'WaiverApplicationDetail'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2021-04-29 15:48:44.734 +01:00 [WRN] No type was specified for the decimal property 'Amount' on entity type 'WithdrawalApplication'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2021-04-29 15:48:44.911 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-29 15:48:46.877 +01:00 [INF] Executed DbCommand (586ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2021-04-29 15:48:47.055 +01:00 [INF] Success: Redirecting user: myrahama to http://localhost:8080/ExternalLogin?ext=bXlyYWhhbWE6UFdEOkExYjJkM3U0bDUu
+2021-04-29 15:48:47.063 +01:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType5`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-04-29 15:48:47.094 +01:00 [INF] Executed action COOP.Banking.Controllers.UsersController.ExternalLoginRedirect (COOP.Banking) in 3472.739ms
+2021-04-29 15:48:47.096 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.UsersController.ExternalLoginRedirect (COOP.Banking)'
+2021-04-29 15:48:47.101 +01:00 [INF] Request finished in 3536.8586ms 200 application/json; charset=utf-8
+2021-04-29 15:48:51.290 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:44319/api/Users/ExternalLoginRedirect application/json 90
+2021-04-29 15:48:51.300 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.UsersController.ExternalLoginRedirect (COOP.Banking)'
+2021-04-29 15:48:51.303 +01:00 [INF] Route matched with {action = "ExternalLoginRedirect", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExternalLoginRedirect(COOP.Banking.Data.Authentication.LoginModel) on controller COOP.Banking.Controllers.UsersController (COOP.Banking).
+2021-04-29 15:48:51.354 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-29 15:48:51.367 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2021-04-29 15:48:51.379 +01:00 [INF] Success: Redirecting user: myrahama to http://localhost:8080/ExternalLogin?ext=bXlyYWhhbWE6UFdEOkExYjJkM3U0bDUu
+2021-04-29 15:48:51.380 +01:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType5`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-04-29 15:48:51.381 +01:00 [INF] Executed action COOP.Banking.Controllers.UsersController.ExternalLoginRedirect (COOP.Banking) in 77.952ms
+2021-04-29 15:48:51.381 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.UsersController.ExternalLoginRedirect (COOP.Banking)'
+2021-04-29 15:48:51.382 +01:00 [INF] Request finished in 92.2699ms 200 application/json; charset=utf-8
+2021-04-29 15:48:57.252 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:44319/api/Users/ExternalLoginRedirect application/json 81
+2021-04-29 15:48:57.254 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.UsersController.ExternalLoginRedirect (COOP.Banking)'
+2021-04-29 15:48:57.255 +01:00 [INF] Route matched with {action = "ExternalLoginRedirect", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExternalLoginRedirect(COOP.Banking.Data.Authentication.LoginModel) on controller COOP.Banking.Controllers.UsersController (COOP.Banking).
+2021-04-29 15:48:57.282 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-29 15:48:57.288 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2021-04-29 15:48:57.300 +01:00 [WRN] Invalid password for user.
+2021-04-29 15:48:57.300 +01:00 [WRN] Invalid password for user: myrahama
+2021-04-29 15:48:57.301 +01:00 [INF] Executing ObjectResult, writing value of type 'COOP.Banking.Data.ServiceResponse`1[[COOP.Banking.BusinessEntities.ApplicationUser, COOP.Banking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-04-29 15:48:57.309 +01:00 [INF] Executed action COOP.Banking.Controllers.UsersController.ExternalLoginRedirect (COOP.Banking) in 53.3999ms
+2021-04-29 15:48:57.309 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.UsersController.ExternalLoginRedirect (COOP.Banking)'
+2021-04-29 15:48:57.309 +01:00 [INF] Request finished in 57.6757ms 400 application/json; charset=utf-8
+2021-04-29 15:49:07.990 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:44319/api/Users/ExternalLoginRedirect application/json 90
+2021-04-29 15:49:07.994 +01:00 [INF] Executing endpoint 'COOP.Banking.Controllers.UsersController.ExternalLoginRedirect (COOP.Banking)'
+2021-04-29 15:49:07.995 +01:00 [INF] Route matched with {action = "ExternalLoginRedirect", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExternalLoginRedirect(COOP.Banking.Data.Authentication.LoginModel) on controller COOP.Banking.Controllers.UsersController (COOP.Banking).
+2021-04-29 15:49:07.999 +01:00 [INF] Entity Framework Core 5.0.2 initialized 'CoopBankingDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-29 15:49:08.006 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LastLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserType], [a].[UserTypeCategory]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2021-04-29 15:49:08.021 +01:00 [INF] Success: Redirecting user: myrahama to http://localhost:8080/ExternalLogin?ext=bXlyYWhhbWE6UFdEOkExYjJkM3U0bDUu
+2021-04-29 15:49:08.022 +01:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType5`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-04-29 15:49:08.023 +01:00 [INF] Executed action COOP.Banking.Controllers.UsersController.ExternalLoginRedirect (COOP.Banking) in 27.0546ms
+2021-04-29 15:49:08.023 +01:00 [INF] Executed endpoint 'COOP.Banking.Controllers.UsersController.ExternalLoginRedirect (COOP.Banking)'
+2021-04-29 15:49:08.024 +01:00 [INF] Request finished in 33.8704ms 200 application/json; charset=utf-8
+2021-04-29 15:49:20.888 +01:00 [INF] Application is shutting down...

@@ -1,0 +1,7 @@
+2021-05-18 03:46:40.326 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-18 03:46:40.785 +01:00 [INF] Now listening on: http://localhost:5000
+2021-05-18 03:46:40.788 +01:00 [INF] Now listening on: https://localhost:5001
+2021-05-18 03:46:40.793 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-18 03:46:40.795 +01:00 [INF] Hosting environment: Production
+2021-05-18 03:46:40.798 +01:00 [INF] Content root path: C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking\bin\Debug\netcoreapp3.1\publish
+2021-05-18 03:52:37.990 +01:00 [INF] Application is shutting down...
