@@ -1,0 +1,237 @@
+@media (min-width: 320px) and (max-width: 767px) {
+    .navbar-brand img{
+        width: 30px;
+    }
+    .headernav2 .nav-link{
+    color: #4A4A4A !important;
+}
+    .headernav2 .register_btn{
+    background: rgba(192,2,14,0.2);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .headernav2 .register_btn .nav-link{
+    color: #AF0202 !important;
+}
+    .headernav2 .register_btn:hover, .register_btn .nav-link:hover{
+    background: #C0020E;
+    color: #ffffff !important;
+    border-radius: 16px;
+}
+    .headernav2{
+        background: #ffffff;
+    }
+    .ad_banner2 p{
+        font-size: 11px;
+    }
+    .ad_banner2 p span{
+        font-size: 11px;
+    }
+    .create_acc_btn{
+        padding: 5px 0.5rem;
+    }
+    .login-register-form{
+        display: none;
+    }
+    .icons-grid{
+        padding: 1rem;
+    }
+    .icons-grid img{
+        height: 30px;
+    }
+    .icons-grid p{
+        font-size: 11px;
+        margin-top: 1rem;
+    }
+    .login-account h1 {
+        font-size: 25px;
+    }
+    .login-account {
+        padding: 5% 10%;
+    }
+    .memberid{
+        height: 40px;
+    }
+    .password{
+        height: 40px;
+    }
+    .login-btn{
+        height: 40px;
+    }
+    .contact-section{
+        padding: 3rem 0 2rem;
+    }
+    .locations, .locations2,.locations3{
+        display: flex;
+        justify-content: flex-start;
+        margin: 0.5rem 0;
+    }
+    .locations img{
+        width: 40px;
+    }
+    .locate{
+        margin-left: 1rem;
+    }
+    .locations h4{
+        font-size: 16px;
+    }
+
+    .nav-pills .nav-link{
+        font-size: 12px;
+    }
+
+    .vision-tab h1 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .vision-tabs1{
+        justify-content: flex-start;
+    }
+
+    .about-content-slider{
+        padding: 2.5rem 2rem;
+        height: 100%;
+    }
+    .about-content-slider2{
+        padding: 2.5rem 2rem;
+        height: 100%;
+    }
+    .about-content-slider3{
+        padding: 2.5rem 2rem;
+        height: 100%;
+    }
+    .about-join-team {
+        height: 100%;
+        padding: 2rem;
+    }
+    .about-join-team p{
+        margin-bottom: 2rem;
+    }
+    .blog_title h1{
+        font-size: 25px;
+    }
+    .news_content h1{
+        font-size: 25px;
+    }
+    .about-join-team h2{
+        font-size: 25px;
+    }
+    .step123-title h1{
+        font-size: 25px;
+    }
+    .social_media_title h1{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 996px) {
+    .headernav2 .nav-link{
+        color: #4A4A4A !important;
+    }
+    .headernav2 .register_btn{
+        background: rgba(192,2,14,0.2);
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .headernav2 .register_btn .nav-link{
+        color: #AF0202 !important;
+    }
+    .headernav2 .register_btn:hover, .register_btn .nav-link:hover{
+        background: #C0020E;
+        color: #ffffff !important;
+        border-radius: 16px;
+    }
+    .icons-grid{
+        padding: 1rem;
+    }
+    .icons-grid img{
+        height: 30px;
+    }
+    .login-register-form{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 997px) and (max-width: 1024px) {
+    .headernav2 .nav-link{
+        color: #4A4A4A !important;
+    }
+    .headernav2 .register_btn{
+        background: rgba(192,2,14,0.2);
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .headernav2 .register_btn .nav-link{
+        color: #AF0202 !important;
+    }
+    .headernav2 .register_btn:hover, .register_btn .nav-link:hover{
+        background: #C0020E;
+        color: #ffffff !important;
+        border-radius: 16px;
+    }
+    .headernav2{
+        background: #ffffff;
+    }
+    
+    .hero-bg{
+        height: 100%;
+    }
+    .icons-grid p{
+        font-size: 12px;
+    }
+    .login-account h1 {
+        font-size: 25px;
+    }
+    .login-account {
+        padding: 10%;
+    }
+    .about-content-slider, .about-content-slider2, .about-content-slider3 {
+        height: 100%;
+        padding: 2.35rem;
+    }
+    .about-join-team {
+        height: 100%;
+        padding: 2rem;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* .hero-bg{
+        height: 100%;
+    } */
+    .login-account h1 {
+    font-size: 25px;
+    }
+    .about-content-slider, .about-content-slider2, .about-content-slider3 {
+    height: 100%;
+    padding: 2.35rem;
+    }
+    .about-join-team {
+    height: 100%;
+    padding: 2rem;
+    }
+
+}
+
+/* @media only screen and (min-width: 1201px) and (max-width: 1399px) {
+    .hero-bg{
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 1501px) and (max-width: 2000px) {
+    .headernav2{
+        background: #ffffff;
+        padding: 0.5rem 0;
+        background-size: contain;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+    }
+} */

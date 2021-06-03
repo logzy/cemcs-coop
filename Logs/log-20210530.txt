@@ -1,0 +1,21 @@
+2021-05-30 17:36:26.195 +01:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-30 17:36:27.810 +01:00 [INF] Starting server on port 8080...
+2021-05-30 17:36:29.036 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-30 17:36:29.102 +01:00 [INF] Hosting environment: Development
+2021-05-30 17:36:29.134 +01:00 [INF] Content root path: C:\Users\USER\Documents\MyWebSites\Demo\coop.banking\COOP.Banking
+2021-05-30 17:36:29.185 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/  
+2021-05-30 17:36:30.726 +01:00 [INF] Executing endpoint 'Fallback {*path}'
+2021-05-30 17:38:31.155 +01:00 [INF] Executed endpoint 'Fallback {*path}'
+2021-05-30 17:38:31.629 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.TimeoutException: The vue-cli server did not start listening for requests within the timeout period of 0 seconds. Check the log output for error information.
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-05-30 17:38:31.982 +01:00 [INF] Request finished in 122810.2326ms 500 text/html; charset=utf-8
+2021-05-30 17:38:32.315 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/favicon.ico  
+2021-05-30 17:38:32.339 +01:00 [INF] Executing endpoint 'Fallback {*path}'

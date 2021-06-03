@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8a5RFFQL+VT8qQsm7jfo0m/XbfOo19AAPyMkfFcKr06b+QlRt8oNOmzn4QZ/XLKG1VgVLM4pFPrd6lcBPFkXKA==",
+  "dgSpecHash": "VF/5m0DwCdo2irrH0Xw+G1fg7x+u/vfUq//rJcdqAjJuHwDzSkQXVrbJ9LKUKlQgqOIX4pFXGinYqJnCqKG1QQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\USER\\Documents\\MyWebSites\\Demo\\coop.banking\\COOP.Banking\\COOP.Banking.csproj",
   "expectedPackageFiles": [
@@ -162,8 +162,7 @@
     "C:\\Users\\USER\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\vueclimiddleware\\3.1.2\\vueclimiddleware.3.1.2.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.11\\microsoft.netcore.app.host.win-x64.3.1.11.nupkg.sha512"
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
   ],
   "logs": []
 }

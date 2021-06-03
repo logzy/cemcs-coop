@@ -1,0 +1,553 @@
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('../../assets/fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('../../assets/fonts/Montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url('../../assets/fonts/Montserrat/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url('../../assets/fonts/Montserrat/Montserrat-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Avenir LT Std 55 Roman';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 55 Roman'),
+    url('../../assets/fonts/avenir/AvenirLTStd-Roman.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir LT Std 55 Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 55 Oblique'),
+    url('../../assets/fonts/avenir/AvenirLTStd-Oblique.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir LT Std 35 Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 35 Light'),
+    url('../../assets/fonts/avenir/AvenirLTStd-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir LT Std 35 Light Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 35 Light Oblique'),
+    url('../../assets/fonts/avenir/AvenirLTStd-LightOblique.woff')
+      format('woff');
+}
+@font-face {
+  font-family: 'Avenir LT Std 45 Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 45 Book'),
+    url('../../assets/fonts/avenir/AvenirLTStd-Book.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir LT Std 45 Book Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 45 Book Oblique'),
+    url('../../assets/fonts/avenir/AvenirLTStd-BookOblique.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir LT Std 65 Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 65 Medium'),
+    url('../../assets/fonts/avenir/AvenirLTStd-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir LT Std 65 Medium Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 65 Medium Oblique'),
+    url('../../assets/fonts/avenir/AvenirLTStd-MediumOblique.woff')
+      format('woff');
+}
+@font-face {
+  font-family: 'Avenir LT Std 85 Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 85 Heavy'),
+    url('../../assets/fonts/avenir/AvenirLTStd-Heavy.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir LT Std 85 Heavy Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 85 Heavy Oblique'),
+    url('../../assets/fonts/avenir/AvenirLTStd-HeavyOblique.woff')
+      format('woff');
+}
+@font-face {
+  font-family: 'Avenir LT Std 95 Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 95 Black'),
+    url('../../assets/fonts/avenir/AvenirLTStd-Black.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir LT Std 95 Black Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 95 Black Oblique'),
+    url('../../assets/fonts/avenir/AvenirLTStd-BlackOblique.woff')
+      format('woff');
+}
+
+/* style  */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat-Regular;
+}
+.chevron-logo {
+  width: 65px;
+}
+p {
+  margin: 0 !important;
+  padding: 0;
+}
+.header-nav {
+  display: flex;
+  direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem 5% 1rem 5%;
+}
+
+
+
+.logout-btn {
+  padding: 1rem 2.2rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #0373bb;
+  color: #fff;
+  font-size: 12px;
+  font-family: Montserrat-SemiBold;
+  letter-spacing: 1.2px;
+}
+
+.background-design {
+  background-image: url('../images/login-bg.svg');
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: fixed;
+  background-size: cover;
+  /* background-color: rgb(227 29 56 / 6%); */
+}
+
+/* dashboard style  */
+.main-dashboard {
+  background: #f9f9f9;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.dashboard-greeting {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+.overview-text {
+  display: flex;
+  width: 132px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .overview-board {
+  padding: 0rem 1rem;
+} */
+
+.line {
+  margin: 0 1rem;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.account-overview {
+  /* background-color: #f4f5fe; */
+  width: 100%;
+  border-radius: 38px;
+
+  padding: 1.7rem 0 1.7rem 2rem;
+}
+
+.saving-balance {
+  background-color: #0373bb;
+  height: 147px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+.loan-balance {
+  background-color: #fff;
+  height: 147px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.header_2 {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 400;
+  color: #fbfeff;
+  margin-bottom: 1rem;
+  background-color: #3785ff;
+  padding: 18px 15px;
+}
+.header_background {
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #3785ff;
+  margin-bottom: 1rem;
+  padding: 7px 1rem;
+}
+
+.saving-img {
+  margin-right: 1.4rem;
+}
+.save-money-image {
+  width: 70px;
+}
+.saving-balance-title {
+  font-size: 12px;
+  font-family: 'Montserrat-Regular';
+  font-weight: 400;
+  color: #fff;
+}
+.saving-balance-amount {
+  font-size: 24px;
+  font-family: 'Montserrat-SemiBold';
+  color: #fff;
+}
+.saving-balance-balance {
+  font-size: 12px;
+  font-family: 'Montserrat-Regular';
+  font-weight: 400;
+  color: #fff;
+}
+.date {
+  display: flex;
+  align-items: center;
+}
+.loan-balance-title {
+  font-size: 12px;
+  font-family: 'Montserrat-Regular';
+  font-weight: 400;
+  color: #0373bb;
+}
+.loan-balance-amount {
+  font-size: 24px;
+  font-family: 'Montserrat-SemiBold';
+  color: #0373bb;
+}
+.loan-balance-balance {
+  font-size: 12px;
+  font-family: 'Montserrat-Regular';
+  font-weight: 400;
+  color: #0373bb;
+}
+
+.dashboard-right-side-bar {
+  padding-right: 1.5rem;
+  padding-top: 2.2rem;
+}
+
+.account-history {
+  /* background-color: #f4f5fe; */
+  width: 100%;
+  border-radius: 38px;
+  padding: 0 0 0 2rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  grid-auto-rows: 100px;
+}
+
+.trans-history {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.12);
+  padding: 1rem 1rem;
+}
+.trans-history-items {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 10px 0;
+}
+
+.trans-amount {
+  font-weight: 500;
+  font-size: 16px;
+}
+.trans-type {
+  font-weight: 700;
+  font-size: 13px;
+  color: #981a32;
+}
+.trans-date {
+  color: #c6bdbd;
+  font-size: 14px;
+}
+
+.trans-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+/* end of dashboard style  */
+
+/* rightsidebar     */
+.right-side-bar {
+}
+
+.content {
+  width: 100%;
+  background-color: #fff;
+  height: 275px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 0 1rem;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.12);
+}
+.profile-content {
+  width: 100%;
+  background-color: #fff;
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 0 1rem;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.12);
+}
+.profile-balances {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.profile-balance {
+  background-color: #981a32;
+  padding: 1.5rem 1rem;
+  border-radius: 10px;
+}
+.profile-balance-type {
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+}
+.profile-balance-amount {
+  font-family: 'Montserrat-SemiBold';
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 0.43px;
+  margin-bottom: 10px;
+}
+
+.profile-image {
+  text-align: center;
+  padding: 2rem 0;
+  width: 100% !important;
+}
+.profile-picture {
+  border-radius: 50%;
+  border: 2px solid #981a32;
+  padding: 3px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.last-login {
+  color: #981a32;
+  font-weight: 700;
+  font-size: 15px;
+}
+.last-login-time {
+  color: #c6bdbd;
+  font-size: 14px;
+}
+#last-login {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#ads {
+  margin-top: 1.5rem;
+}
+
+.ads-picture {
+  border-radius: 10px;
+}
+/* rightsidebar     */
+
+/* footer  */
+#footer {
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: flex-end;
+  padding: 7px 16px;
+  color: #981a32;
+  font-weight: 500;
+  font-size: 12px;
+  background: #f9f9f9;
+}
+/* end footer  */
+
+.header-title {
+  font-size: 26px;
+  font-family: 'Montserrat-SemiBold';
+  color: #121272;
+  margin-left: 5px;
+}
+.date-item {
+  color: #c6bdbd;
+  font-size: 15px;
+  font-family: 'Montserrat-regular';
+}
+.dropdown-menu {
+  border: none !important;
+}
+/* nav :start  */
+.chevron-navbar {
+  /* box-shadow: 0 6px 13px 0 rgba(174, 174, 174, 0.5); */
+  background-color: #fff !important;
+  border-radius: 5px;
+}
+
+.chevron-navbar .chevron-nav-link {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px !important;
+  /* margin-right: 35px; */
+  font-family: 'Montserrat-SemiBold';
+}
+.chevron-nav-dropdown-link {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px !important;
+  font-family: 'Montserrat-SemiBold';
+}
+
+.nav-link:hover {
+  color: #981a32 !important;
+}
+
+/* nav end  */
+
+.form-control,
+.custom-select {
+  border-radius: 0px !important;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+select:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.form-row {
+  padding: 3px;
+}
+.form-label {
+  font-weight: 500;
+}
+.form {
+  padding: 0 4px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-btn {
+  border-radius: 0px !important;
+  width: 120px;
+  background-color: #0373bb !important;
+  font-weight: 600 !important;
+  font-family: 'Montserrat-SemiBold';
+}
+
+@media only screen and (max-width: 767px) and (min-width: 280px) {
+  .header-nav {
+    padding: 1rem 5%;
+  }
+  .chevron-logo {
+    width: 40px;
+  }
+  .logout-btn {
+    padding: 1rem;
+  }
+  .account-overview {
+    padding: 1.7rem;
+  }
+  .dashboard-right-side-bar {
+    padding: 1.7rem;
+  }
+}
